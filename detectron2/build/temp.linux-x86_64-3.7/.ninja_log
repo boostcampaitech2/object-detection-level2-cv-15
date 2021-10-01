@@ -1,0 +1,6 @@
+# ninja log v5
+1	7160	1632503446943230000	/opt/ml/detection/detectron2/build/temp.linux-x86_64-3.7/opt/ml/detection/detectron2/detectron2/layers/csrc/cocoeval/cocoeval.o	bb8cf1f78509f182
+2	8125	1632503447909230000	/opt/ml/detection/detectron2/build/temp.linux-x86_64-3.7/opt/ml/detection/detectron2/detectron2/layers/csrc/box_iou_rotated/box_iou_rotated_cpu.o	1e780475b7c8e57a
+1	11189	1632503450970230000	/opt/ml/detection/detectron2/build/temp.linux-x86_64-3.7/opt/ml/detection/detectron2/detectron2/layers/csrc/nms_rotated/nms_rotated_cpu.o	a734f2b5c95ccff7
+1	13080	1632503452862230000	/opt/ml/detection/detectron2/build/temp.linux-x86_64-3.7/opt/ml/detection/detectron2/detectron2/layers/csrc/ROIAlignRotated/ROIAlignRotated_cpu.o	cd5908d9ced445b1
+0	26943	1632503466715508000	/opt/ml/detection/detectron2/build/temp.linux-x86_64-3.7/opt/ml/detection/detectron2/detectron2/layers/csrc/vision.o	19f451a69db9692e
