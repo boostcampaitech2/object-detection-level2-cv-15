@@ -127,7 +127,7 @@ def main():
     # dump config
     cfg.dump(osp.join(cfg.work_dir, osp.basename(args.config)))
     # init the logger before other steps
-    timestamp = time.strftime('%Y%m%d_%H%M%S', time.localtime())
+    timestamp = time.strftime('%Y%m%d_%H%M%S', time.localtime(time.time() + 9 * 3600))
     log_file = osp.join(cfg.work_dir, f'{timestamp}.log')
     logger = get_root_logger(log_file=log_file, log_level=cfg.log_level)
 
@@ -161,6 +161,7 @@ def main():
         test_cfg=cfg.get('test_cfg'))
     model.init_weights()
 
+    print(f"##################################################\n{cfg.data.train}\n##################################################")
     datasets = [build_dataset(cfg.data.train)]
     if len(cfg.workflow) == 2:
         val_dataset = copy.deepcopy(cfg.data.val)
