@@ -29,8 +29,8 @@ def main(config):
 
     # print(list(config))
 
-    annotation = '../../datasets/train.json' # annotation 경로
-    data_dir = '../../datasets' # data_dir 경로
+    annotation = '../../dataset/train.json' # annotation 경로
+    data_dir = '../../dataset' # data_dir 경로
     train_dataset = CustomDataset(annotation, data_dir, get_train_transform()) 
     train_data_loader = DataLoader(
         train_dataset,
@@ -46,8 +46,9 @@ def main(config):
     model = get_model(config)
     num_classes = 11 # class 개수= 10 + backgroundb
     # get number of input features for the classifier
-    in_features = model.roi_heads.box_predictor.cls_score.in_features
-    model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
+    #in_features = model.roi_heads.box_predictor.cls_score.in_features
+    #model.roi_heads.box_predictor = get_box_model(config)
+    #model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
     model.to(device)
     params = [p for p in model.parameters() if p.requires_grad]
     lr=config.getfloat('h_param','lr')
