@@ -3,7 +3,7 @@ from pycocotools.cocoeval import COCOeval
 import numpy as np
 import cv2
 import os
-
+import tqdm
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
@@ -27,6 +27,8 @@ from optimizer import *
 def main(config):
     # 데이터셋 불러오기
 
+    # print(list(config))
+
     annotation = '../../datasets/train.json' # annotation 경로
     data_dir = '../../datasets' # data_dir 경로
     train_dataset = CustomDataset(annotation, data_dir, get_train_transform()) 
@@ -48,7 +50,7 @@ def main(config):
     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
     model.to(device)
     params = [p for p in model.parameters() if p.requires_grad]
-    lr=config.getint('h_param','lr')
+    lr=config.getfloat('h_param','lr')
     optimizer = get_optimizer(model,config)
     num_epochs = config.getint('h_param','num_epochs')
 

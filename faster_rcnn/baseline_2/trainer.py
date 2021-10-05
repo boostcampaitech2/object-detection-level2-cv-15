@@ -1,3 +1,7 @@
+from tqdm import tqdm
+from torch.utils.data import DataLoader, Dataset
+import os
+
 class Averager:
     def __init__(self):
         self.current_total = 0.0
@@ -30,7 +34,7 @@ def train_fn(num_epochs, train_data_loader, optimizer, model, device):
     loss_hist = Averager()
     for epoch in range(num_epochs):
         loss_hist.reset()
-
+        
         for images, targets, image_ids in tqdm(train_data_loader):
 
             # gpu 계산을 위해 image.to(device)
