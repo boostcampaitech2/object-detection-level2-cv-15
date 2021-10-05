@@ -27,8 +27,8 @@ from optimizer import *
 def main(config):
     # 데이터셋 불러오기
 
-    annotation = '../dataset/train.json' # annotation 경로
-    data_dir = '../dataset' # data_dir 경로
+    annotation = '../../datasets/train.json' # annotation 경로
+    data_dir = '../../datasets' # data_dir 경로
     train_dataset = CustomDataset(annotation, data_dir, get_train_transform()) 
     train_data_loader = DataLoader(
         train_dataset,
