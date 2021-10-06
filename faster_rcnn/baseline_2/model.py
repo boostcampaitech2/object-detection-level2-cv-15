@@ -11,7 +11,8 @@ import torch
 import torchvision
 from torchvision.models.detection import *
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
-from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
+#from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
+
 
 from torch.utils.data import DataLoader, Dataset
 import pandas as pd
@@ -24,22 +25,49 @@ from dataset import get_train_transform
 from model import * #model list file 불러오기
 from optimizer import *
 
-def get_model(config):
+from torchvision.models.mobilenetv2 import _make_divisible, ConvBNActivation
 
-    model = config['training']['model_name']
+
+# from .rpn import RPNHead, RegionProposalNetwork
+# from .roi_heads import RoIHeads
+# from .transform import GeneralizedRCNNTransform
+# from .backbone_utils import resnet_fpn_backbone, _validate_trainable_layers, mobilenet_backbone
+
+def get_model(model_name):
     
-    if model == 'fasterrcnn_resnet50_fpn':
-        model = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
-    elif model == 'fasterrcnn_mobilenet_v3_large_fpn':
-        model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
-    elif model == 'mobilenet_v3_large_320_fpn':
-        model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
-    elif model == 'retinanet_resnet50_fpn':
-        model = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)     
-    elif model == 'ssd300_vgg16':
-        model = torchvision.models.detection.ssd300_vgg16(pretrained=True)     
-    elif model == 'maskrcnn_resnet50_fpn':
-        model =torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)     
-    elif model == 'keypointrcnn_resnet50_fpn':
-        model = torchvision.models.detection.keypointrcnn_resnet50_fpn(pretrained=True)   
+    if model_name == 'fasterrcnn_resnet50_fpn':
+        model_name = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
+    elif model_name == 'fasterrcnn_mobilenet_v3_large_fpn':
+        model_name = torchvision.models.detection.faster_rcnn.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
+    elif model_name == 'mobilenet_v3_large_320_fpn':
+        model_name = torchvision.models.detection.faster_rcnn.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
+    elif model_name == 'retinanet_resnet50_fpn':
+        model_name = torchvision.models.detection.faster_rcnn.retinanet_resnet50_fpn(pretrained=True)     
+    elif model_name == 'ssd300_vgg16':
+        model_name = torchvision.models.detection.ssd300_vgg16(pretrained=True)     
+    elif model_name == 'maskrcnn_resnet50_fpn':
+        model_name =torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)     
+    elif model_name == 'keypointrcnn_resnet50_fpn':
+        model_name = torchvision.models.detection.keypointrcnn_resnet50_fpn(pretrained=True)   
+    
+    return model_name
+
+def get_box_model(config):
+
+    model = config['training']['box_model_name']
+    
+    if model == 'FastRCNNPredictor':
+        model = torchvision.models.detection.fasterrcnn.FastRCNNPredictor
+    # elif model == 'fasterrcnn_mobilenet_v3_large_fpn':
+    #     model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
+    # elif model == 'mobilenet_v3_large_320_fpn':
+    #     model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
+    # elif model == 'retinanet_resnet50_fpn':
+    #     model = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)     
+    # elif model == 'ssd300_vgg16':
+    #     model = torchvision.models.detection.ssd300_vgg16(pretrained=True)     
+    # elif model == 'maskrcnn_resnet50_fpn':
+    #     model =torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)     
+    # elif model == 'keypointrcnn_resnet50_fpn':
+    #     model = torchvision.models.detection.keypointrcnn_resnet50_fpn(pretrained=True)   
     return model
