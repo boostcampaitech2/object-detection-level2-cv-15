@@ -1,8 +1,8 @@
 {
     "training" : {
-        "model_name" : "retinanet_resnet50_fpn",
+        "model_name" : "fasterrcnn_resnet50_fpn",
         "box_model_name" : "FastRCNNPredictor",
-        "Optimizer": "SGD"
+        "optimizer": "SGD"
     },
 
     "model" : [{

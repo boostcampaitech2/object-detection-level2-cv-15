@@ -23,54 +23,13 @@ from dataset import CustomDataset #dataset
 from dataset import get_train_transform
 from model import * #model list file 불러오기
 from optimizer import *
-
-# def main(config):
-#     # 데이터셋 불러오기
-
-#     # print(list(config))
-
-#     annotation = '../../dataset/train.json' # annotation 경로
-#     data_dir = '../../dataset' # data_dir 경로
-#     train_dataset = CustomDataset(annotation, data_dir, get_train_transform()) 
-#     train_data_loader = DataLoader(
-#         train_dataset,
-#         batch_size=config.getint('h_param','batch_size'),
-#         shuffle=False,
-#         num_workers=config.getint('h_param','num_workers'),
-#         collate_fn=collate_fn
-#     )
-#     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
-#     print(device)
-    
-#     # torchvision model 불러오기
-#     model = get_model(config)
-#     num_classes = 11 # class 개수= 10 + backgroundb
-#     # get number of input features for the classifier
-#     in_features = model.roi_heads.box_predictor.cls_score.in_features
-#     #model.roi_heads.box_predictor = get_box_model(config)
-#     model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
-#     model.to(device)
-#     params = [p for p in model.parameters() if p.requires_grad]
-#     lr=config.getfloat('h_param','lr')
-#     optimizer = get_optimizer(model,config)
-#     num_epochs = config.getint('h_param','num_epochs')
-
-
-#     # training
-#     train_fn(num_epochs, train_data_loader, optimizer, model, device)
-
-
+from setting import *
 
 if __name__ == '__main__':
     conf = JsonConfigFileManager("./config.json")
     config = conf.values
 
-    #---- config
-
-    # model
-    model_name = "fasterrcnn_resnet50_fpn"
-    box_model_name = "FastRCNNPredictor"
-    
+    #=========================config====================================#
 
     num_epochs = config["h_param"]["num_epochs"]
     num_workers = config["h_param"]["num_workers"]
@@ -78,38 +37,42 @@ if __name__ == '__main__':
     batch_size = config["h_param"]["batch_size"]
     lr = config["h_param"]["lr"]
     
-
     annotation = config["path"]["annotation_dir"] # annotation 경로
     data_dir = config["path"]["data_dir"] # data_dir 경로
+
+    model = get_model(config["training"]["model_name"])
+    box_model_name = get_model(config["training"]["box_model_name"])
+    optimizer = get_optimizer(model, config["training"]["optimizer"], lr)
+
+    #=========================config====================================#
+
+    # Dataset
 
     train_dataset = CustomDataset(annotation, data_dir, get_train_transform()) 
     train_data_loader = DataLoader(
         train_dataset,
-        batch_size=config.getint('h_param','batch_size'),
+        batch_size=batch_size,
         shuffle=False,
-        num_workers=config.getint('h_param','num_workers'),
+        num_workers=num_workers,
         collate_fn=collate_fn
     )
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     print(device)
     
     # torchvision model 불러오기
-    model = get_model(config)
+    # model = get_model(config)
     #num_classes = 11 # class 개수= 10 + backgroundb
     # get number of input features for the classifier
     in_features = model.roi_heads.box_predictor.cls_score.in_features
     #model.roi_heads.box_predictor = get_box_model(config)
-    model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes)
+    model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes) # box model 점검
     model.to(device)
-    params = [p for p in model.parameters() if p.requires_grad]
-    lr=config.getfloat('h_param','lr')
-    optimizer = get_optimizer(model,config)
-    num_epochs = config.getint('h_param','num_epochs')
-
+    #print(model)
+    #params = [p for p in model.parameters() if p.requires_grad]
+    #print(params)
+    #lr=config.getfloat('h_param','lr')
+    #optimizer = get_optimizer(model,config)
+    # = config.getint('h_param','num_epochs')
 
     # training
     train_fn(num_epochs, train_data_loader, optimizer, model, device)
-
-
-
-    #main(config)

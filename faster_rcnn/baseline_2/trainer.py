@@ -1,5 +1,7 @@
 from tqdm import tqdm
 from torch.utils.data import DataLoader, Dataset
+
+import torch
 import os
 
 class Averager:
