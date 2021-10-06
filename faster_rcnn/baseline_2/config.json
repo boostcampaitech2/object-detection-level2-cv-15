@@ -1,0 +1,50 @@
+{
+    "training" : {
+        "model_name" : "retinanet_resnet50_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "Optimizer": "SGD"
+    },
+
+    "model" : [{
+        "model_name" : "fasterrcnn_resnet50_fpn",
+        "box_model_name" : "FastRCNNPredictor"
+    },
+    {
+        "model_name" : "fasterrcnn_mobilenet_v3_large_fpn",
+        "box_model_name" : "FastRCNNPredictor"
+    },
+    {
+        "model_name" : "mobilenet_v3_large_320_fpn",
+        "box_model_name" : "None"
+    },
+    {
+        "model_name" : "retinanet_resnet50_fpn",
+        "box_model_name" : "None"
+    },
+    {
+        "model_name" : "ssd300_vgg16",
+        "box_model_name" : "None"
+    },
+    {
+        "model_name" : "maskrcnn_resnet50_fpn",
+        "box_model_name" : "None"
+    },
+    {
+        "model_name" : "keypointrcnn_resnet50_fpn",
+        "box_model_name" : "None"
+    }
+    ],
+
+    "h_param" : {
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11
+    },
+
+    "path" : {
+        "annotation_dir" : "../../dataset/train.json",
+        "data_dir" : "../../dataset"
+    }
+}
