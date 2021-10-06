@@ -3,15 +3,15 @@ from pycocotools.cocoeval import COCOeval
 import numpy as np
 import cv2
 import os
-
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
 import torch
 # faster rcnn model이 포함된 library
 import torchvision
-
+from torchvision.models.detection import *
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
+from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
 
 from torch.utils.data import DataLoader, Dataset
 import pandas as pd

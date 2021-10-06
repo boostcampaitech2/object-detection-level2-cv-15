@@ -1,7 +1,7 @@
 from tqdm import tqdm
 from torch.utils.data import DataLoader, Dataset
 import os
-
+import torch
 class Averager:
     def __init__(self):
         self.current_total = 0.0
@@ -56,7 +56,7 @@ def train_fn(num_epochs, train_data_loader, optimizer, model, device):
 
         print(f"Epoch #{epoch+1} loss: {loss_hist.value}")
                 
-        if epoch in[4,8,12]:
+        if epoch in[4,8,12,16]:
             for g in optimizer.param_groups:
                 g['lr']/=10
                 print('Loss 1/10')
