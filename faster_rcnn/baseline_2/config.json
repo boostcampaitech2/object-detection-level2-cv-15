@@ -1,50 +1,107 @@
 {
     "training" : {
+<<<<<<< HEAD
         "model_name" : "retinanet_resnet50_fpn",
         "box_model_name" : "FastRCNNPredictor",
         "optimizer": "SGD"
-    },
-
-    "model" : [{
-        "model_name" : "fasterrcnn_resnet50_fpn",
-        "box_model_name" : "FastRCNNPredictor"
-    },
-    {
-        "model_name" : "fasterrcnn_mobilenet_v3_large_fpn",
-        "box_model_name" : "FastRCNNPredictor"
-    },
-    {
-        "model_name" : "mobilenet_v3_large_320_fpn",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "retinanet_resnet50_fpn",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "ssd300_vgg16",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "maskrcnn_resnet50_fpn",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "keypointrcnn_resnet50_fpn",
-        "box_model_name" : "None"
-    }
-    ],
-
-    "h_param" : {
-        "num_epochs" : 20,
-        "batch_size" : 16,
-        "lr" : 0.01,
-        "num_workers" : 1,
-        "num_classes" : 11
+=======
+        "id" : 5
     },
 
     "path" : {
         "annotation_dir" : "../../dataset/train.json",
         "data_dir" : "../../dataset"
+>>>>>>> 4cca464d39df1386c7d4a769512374f61c2ee7f3
+    },
+
+    "model" : [{
+        "id" : 1,
+        "model_name" : "fasterrcnn_resnet50_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
+    },
+    {
+        "id" : 2,
+        "model_name" : "fasterrcnn_mobilenet_v3_large_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
+    },
+    {
+        "id" : 3,
+        "model_name" : "mobilenet_v3_large_320_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
+    },
+    {
+        "id" : 4,
+        "model_name" : "retinanet_resnet50_fpn",
+        "box_model_name" : "None",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
+    },
+    {
+        "id" : 5,
+        "model_name" : "ssd300_vgg16",
+        "box_model_name" : "None",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
+    },
+    {
+        "id" : 6,
+        "model_name" : "maskrcnn_resnet50_fpn",
+        "box_model_name" : "None",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
+    },
+    {
+        "id" : 7,
+        "model_name" : "keypointrcnn_resnet50_fpn",
+        "box_model_name" : "None",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
+    },
+    {
+        "id" : 8,
+        "model_name" : "keypointrcnn_resnet50_fpn",
+        "box_model_name" : "None",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD"
     }
+    ]
+    
 }
