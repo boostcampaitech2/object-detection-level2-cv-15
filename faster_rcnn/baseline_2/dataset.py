@@ -33,7 +33,7 @@ class CustomDataset():
       data_dir: data가 존재하는 폴더 경로
       transforms: data transform (resize, crop, Totensor, etc,,,)
     '''
-    def __init__(self, annotation, data_dir, transforms=None):
+    def __init__(self, annotation, data_dir,transforms=None ):
         super().__init__()
         self.data_dir = data_dir
         # coco annotation 불러오기 (coco API)
@@ -54,6 +54,8 @@ class CustomDataset():
         image = cv2.imread(os.path.join(self.data_dir, image_info['file_name']))
         image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB).astype(np.float32)
         image /= 255.0
+
+    
 
         ann_ids = self.coco.getAnnIds(imgIds=image_info['id'])
         anns = self.coco.loadAnns(ann_ids)

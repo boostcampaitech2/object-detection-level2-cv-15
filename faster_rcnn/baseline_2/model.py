@@ -42,7 +42,7 @@ def get_model(model_name):
     elif model_name == 'mobilenet_v3_large_320_fpn':
         model_name = torchvision.models.detection.faster_rcnn.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
     elif model_name == 'retinanet_resnet50_fpn':
-        model_name = torchvision.models.detection.faster_rcnn.retinanet_resnet50_fpn(pretrained=True)     
+        model_name = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)     
     elif model_name == 'ssd300_vgg16':
         model_name = torchvision.models.detection.ssd300_vgg16(pretrained=True)     
     elif model_name == 'maskrcnn_resnet50_fpn':

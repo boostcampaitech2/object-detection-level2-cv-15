@@ -14,6 +14,7 @@ from torchvision.models.detection import FasterRCNN
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
 from torchvision.models.detection import *
 
+
 from torch.utils.data import DataLoader, Dataset
 import pandas as pd
 from tqdm import tqdm
@@ -22,7 +23,7 @@ from trainer import train_fn #trainer
 from trainer import collate_fn
 from dataset import CustomDataset #dataset
 from dataset import get_train_transform
-
+from model import *
 from optimizer import *
 from setting import *
 
@@ -59,22 +60,18 @@ if __name__ == '__main__':
     )
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     print(device)
-    custom_rpn = AnchorGenerator(sizes=((32, 64, 128, 512)), aspect_ratios=((0.5, 1.0, 2.0))) 
-    roi_pooler = torchvision.ops.MultiScaleRoIAlign(featmap_names=[0], output_size=7, sampling_ratio=2)
+    #소정
+    # custom_rpn = AnchorGenerator(sizes=((32, 64, 128, 512)), aspect_ratios=((0.5, 1.0, 2.0))) 
+    # roi_pooler = torchvision.ops.MultiScaleRoIAlign(featmap_names=[0], output_size=7, sampling_ratio=2)
     # torchvision model 불러오기
-    # model = get_model(config)
+
     #num_classes = 11 # class 개수= 10 + backgroundb
     # get number of input features for the classifier
-    in_features = model.roi_heads.box_predictor.cls_score.in_features
+    #in_features = model.roi_heads.box_predictor.cls_score.in_features
     #model.roi_heads.box_predictor = get_box_model(config)
-    model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes) # box model 점검
+   # model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes) 
+    # box model 점검
     model.to(device)
-    #print(model)
-    #params = [p for p in model.parameters() if p.requires_grad]
-    #print(params)
-    #lr=config.getfloat('h_param','lr')
-    #optimizer = get_optimizer(model,config)
-    # = config.getint('h_param','num_epochs')
 
     # training
     train_fn(num_epochs, train_data_loader, optimizer, model, device)
