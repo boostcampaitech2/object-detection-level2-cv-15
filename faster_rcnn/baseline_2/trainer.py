@@ -62,7 +62,7 @@ def train_fn(num_epochs, train_data_loader, optimizer, model, device):
             for g in optimizer.param_groups:
                 g['lr']/=10
                 print('Loss 1/10')
-                print("{lr}")
+                print("f{lr}")
         if loss_hist.value < best_loss:
             save_path = './checkpoints/faster_rcnn_torchvision_checkpoints.pth'
             save_dir = os.path.dirname(save_path)
