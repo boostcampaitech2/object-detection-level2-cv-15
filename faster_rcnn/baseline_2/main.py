@@ -80,7 +80,6 @@ if __name__ == '__main__':
     )
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     print(device)
-<<<<<<< HEAD
     #소정
     # custom_rpn = AnchorGenerator(sizes=((32, 64, 128, 512)), aspect_ratios=((0.5, 1.0, 2.0))) 
     # roi_pooler = torchvision.ops.MultiScaleRoIAlign(featmap_names=[0], output_size=7, sampling_ratio=2)
@@ -90,16 +89,14 @@ if __name__ == '__main__':
     # get number of input features for the classifier
     #in_features = model.roi_heads.box_predictor.cls_score.in_features
     #model.roi_heads.box_predictor = get_box_model(config)
-   # model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes) 
+    # model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes) 
     # box model 점검
-=======
 
     # Roi heads 설정
     if box_model_name != None:
         in_features = model.roi_heads.box_predictor.cls_score.in_features
         model.roi_heads.box_predictor = box_model_name(in_features, num_classes)
     
->>>>>>> 4cca464d39df1386c7d4a769512374f61c2ee7f3
     model.to(device)
 
     # training

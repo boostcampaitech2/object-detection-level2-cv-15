@@ -12,20 +12,59 @@ from albumentations.pytorch import ToTensorV2
 import torch
 
 
+# class Albumentations:
+#     # YOLOv5 Albumentations class (optional, used if package is installed)
+#     def __init__(self):
+#         self.transform = None
+#         try:
+#             import albumentations as A
+#             check_version(A.__version__, '1.0.3')  # version requirement
+
+#             self.transform = A.Compose([
+#                 A.Blur(blur_limit=50, p=0.1),
+#                 A.MedianBlur(blur_limit=51, p=0.1),
+#                 A.ToGray(p=0.3)],
+#                 bbox_params=A.BboxParams(format='yolo', label_fields=['class_labels']))
+
+#             logging.info(colorstr('albumentations: ') + ', '.join(f'{x}' for x in self.transform.transforms))
+#         except ImportError:  # package not installed, skip
+#             pass
+#         except Exception as e:
+#             logging.info(colorstr('albumentations: ') + f'{e}')
+
+#     def __call__(self, im, labels, p=1.0):
+#         if self.transform and random.random() < p:
+#             new = self.transform(image=im, bboxes=labels[:, 1:], class_labels=labels[:, 0])  # transformed
+#             im, labels = new['image'], np.array([[c, *b] for c, b in zip(new['class_labels'], new['bboxes'])])
+#         return im, labels
+
+
+
 # faster rcnn model이 포함된 library
-import torchvision
+
 def get_train_transform():
     return A.Compose([
-        A.Resize(1024, 1024),
-        A.Flip(p=0.5),
-        ToTensorV2(p=1.0)
-    ], bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})
+            A.Resize(1024,1024),
+            A.Blur(blur_limit=50, p=0.1),
+            #A.MedianBlur(blur_limit=51, p=0.1),
+            A.ToGray(p=0.3),
+            A.Flip(p=0.5),
+            ToTensorV2(p=1.0)],
+            bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})
 
 
-def get_valid_transform():
-    return A.Compose([
-        ToTensorV2(p=1.0)
-    ], bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})
+#default
+# def get_train_transform():
+#     return A.Compose([
+#         A.Resize(1024, 1024),
+#         A.Flip(p=0.5),
+#         ToTensorV2(p=1.0)
+#     ], bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})
+
+# def get_valid_transform():
+#     return A.Compose([
+#         ToTensorV2(p=1.0)
+#     ], bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})
 
 
 class CustomDataset():
