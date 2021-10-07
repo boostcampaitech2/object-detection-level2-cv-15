@@ -43,12 +43,12 @@ def get_model(model_name):
     
     return model_name
 
-def get_box_model(config):
+def get_box_model(model):
 
-    model = config['training']['box_model_name']
-    
     if model == 'FastRCNNPredictor':
-        model = torchvision.models.detection.fasterrcnn.FastRCNNPredictor
+        model = FastRCNNPredictor
+    else:
+        model = None
     # elif model == 'fasterrcnn_mobilenet_v3_large_fpn':
     #     model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
     # elif model == 'mobilenet_v3_large_320_fpn':

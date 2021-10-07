@@ -25,25 +25,45 @@ from model import * #model list file 불러오기
 from optimizer import *
 from setting import *
 
+import sys
+
 if __name__ == '__main__':
     conf = JsonConfigFileManager("./config.json")
     config = conf.values
 
     #=========================config====================================#
 
-    num_epochs = config["h_param"]["num_epochs"]
-    num_workers = config["h_param"]["num_workers"]
-    num_classes = config["h_param"]["num_classes"]
-    batch_size = config["h_param"]["batch_size"]
-    lr = config["h_param"]["lr"]
+    # num_epochs = config["h_param"]["num_epochs"]
+    # num_workers = config["h_param"]["num_workers"]
+    # num_classes = config["h_param"]["num_classes"]
+    # batch_size = config["h_param"]["batch_size"]
+    # lr = config["h_param"]["lr"]
     
+    # annotation = config["path"]["annotation_dir"] # annotation 경로
+    # data_dir = config["path"]["data_dir"] # data_dir 경로
+
+    # model = get_model(config["training"]["model_name"])
+    # box_model_name = get_model(config["training"]["box_model_name"])
+    # optimizer = get_optimizer(model, config["training"]["optimizer"], lr)
+
+    start_id = config["training"]["id"]
+
     annotation = config["path"]["annotation_dir"] # annotation 경로
     data_dir = config["path"]["data_dir"] # data_dir 경로
 
-    model = get_model(config["training"]["model_name"])
-    box_model_name = get_model(config["training"]["box_model_name"])
-    optimizer = get_optimizer(model, config["training"]["optimizer"], lr)
+    for config in config["model"]:
+        if config["id"] == start_id:
+            num_epochs = config["num_epochs"]
+            num_workers = config["num_workers"]
+            num_classes = config["num_classes"]
+            batch_size = config["batch_size"]
+            lr = config["lr"]
 
+            model = get_model(config["model_name"])
+            box_model_name = get_box_model(config["box_model_name"])
+            optimizer = get_optimizer(model, config["optimizer"], lr)
+
+    print(model)
     #=========================config====================================#
 
     # Dataset
@@ -52,27 +72,28 @@ if __name__ == '__main__':
     train_data_loader = DataLoader(
         train_dataset,
         batch_size=batch_size,
-        shuffle=False,
+        shuffle=True,
         num_workers=num_workers,
         collate_fn=collate_fn
     )
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     print(device)
+
+    # Roi heads 설정
+    if box_model_name != None:
+        in_features = model.roi_heads.box_predictor.cls_score.in_features
+        model.roi_heads.box_predictor = box_model_name(in_features, num_classes)
     
-    # torchvision model 불러오기
-    # model = get_model(config)
-    #num_classes = 11 # class 개수= 10 + backgroundb
-    # get number of input features for the classifier
-    in_features = model.roi_heads.box_predictor.cls_score.in_features
-    #model.roi_heads.box_predictor = get_box_model(config)
-    model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes) # box model 점검
     model.to(device)
-    #print(model)
-    #params = [p for p in model.parameters() if p.requires_grad]
-    #print(params)
-    #lr=config.getfloat('h_param','lr')
-    #optimizer = get_optimizer(model,config)
-    # = config.getint('h_param','num_epochs')
 
     # training
     train_fn(num_epochs, train_data_loader, optimizer, model, device)
+    
+    # wandb 
+
+    # inference
+    
+    # train_end
+    print("-" * 20)
+
+    print("end")
