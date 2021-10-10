@@ -30,7 +30,7 @@ def get_model(model_name):
         model_name = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
     elif model_name == 'fasterrcnn_mobilenet_v3_large_fpn':
         model_name = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
-    elif model_name == 'mobilenet_v3_large_320_fpn':
+    elif model_name == 'fasterrcnn_mobilenet_v3_large_320_fpn':
         model_name = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
     elif model_name == 'retinanet_resnet50_fpn':
         model_name = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)     

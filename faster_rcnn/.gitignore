@@ -1,5 +1,5 @@
 *.jpg
 *.pth
+*checkpoints*/
 dataset/
 *pycache*/
-baseline_2_hyuns/

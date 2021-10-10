@@ -1,10 +1,12 @@
 {
     "training" : {
-        "id" : 5
+        "id" : 1
     },
 
     "path" : {
-        "annotation_dir" : "../../dataset/train.json",
+        "annotation_train_dir" : "../../dataset/train_1.json",
+        "annotation_valid_dir" : "../../dataset/val_1.json",
+        "annotation_test_dir" : "../../dataset/test.json",
         "data_dir" : "../../dataset"
     },
 
@@ -32,7 +34,7 @@
     },
     {
         "id" : 3,
-        "model_name" : "mobilenet_v3_large_320_fpn",
+        "model_name" : "fasterrcnn_mobilenet_v3_large_320_fpn",
         "box_model_name" : "FastRCNNPredictor",
         "num_epochs" : 20,
         "batch_size" : 16,
@@ -66,7 +68,7 @@
     {
         "id" : 6,
         "model_name" : "maskrcnn_resnet50_fpn",
-        "box_model_name" : "None",
+        "box_model_name" : "FastRCNNPredictor",
         "num_epochs" : 20,
         "batch_size" : 16,
         "lr" : 0.01,
@@ -77,18 +79,7 @@
     {
         "id" : 7,
         "model_name" : "keypointrcnn_resnet50_fpn",
-        "box_model_name" : "None",
-        "num_epochs" : 20,
-        "batch_size" : 16,
-        "lr" : 0.01,
-        "num_workers" : 1,
-        "num_classes" : 11,
-        "optimizer": "SGD"
-    },
-    {
-        "id" : 8,
-        "model_name" : "keypointrcnn_resnet50_fpn",
-        "box_model_name" : "None",
+        "box_model_name" : "FastRCNNPredictor",
         "num_epochs" : 20,
         "batch_size" : 16,
         "lr" : 0.01,

@@ -31,7 +31,7 @@ def collate_fn(batch):
 
 
 
-def train_fn(num_epochs, train_data_loader, optimizer, model, device):
+def train_fn(start_id, num_epochs, train_data_loader, optimizer, model, device):
     best_loss = 1000
     loss_hist = Averager()
     for epoch in range(num_epochs):
@@ -64,7 +64,7 @@ def train_fn(num_epochs, train_data_loader, optimizer, model, device):
                 print('Loss 1/10')
                 print("{lr}")
         if loss_hist.value < best_loss:
-            save_path = './checkpoints/faster_rcnn_torchvision_checkpoints.pth'
+            save_path = f'./checkpoints/faster_rcnn_torchvision_checkpoints_{start_id}.pth'
             save_dir = os.path.dirname(save_path)
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir)

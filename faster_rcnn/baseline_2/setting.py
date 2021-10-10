@@ -39,3 +39,5 @@ class JsonConfigFileManager:
         if save_file_name:
             with open(save_file_name, 'w') as f:
                 json.dump(dict(self.values), f)
+
+    

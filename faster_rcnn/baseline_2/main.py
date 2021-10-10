@@ -24,6 +24,7 @@ from dataset import get_train_transform
 from model import * #model list file 불러오기
 from optimizer import *
 from setting import *
+#from inference import *
 
 import sys
 
@@ -32,23 +33,12 @@ if __name__ == '__main__':
     config = conf.values
 
     #=========================config====================================#
-
-    # num_epochs = config["h_param"]["num_epochs"]
-    # num_workers = config["h_param"]["num_workers"]
-    # num_classes = config["h_param"]["num_classes"]
-    # batch_size = config["h_param"]["batch_size"]
-    # lr = config["h_param"]["lr"]
     
-    # annotation = config["path"]["annotation_dir"] # annotation 경로
-    # data_dir = config["path"]["data_dir"] # data_dir 경로
-
-    # model = get_model(config["training"]["model_name"])
-    # box_model_name = get_model(config["training"]["box_model_name"])
-    # optimizer = get_optimizer(model, config["training"]["optimizer"], lr)
-
     start_id = config["training"]["id"]
 
     annotation = config["path"]["annotation_dir"] # annotation 경로
+    #hyuns
+    #annotation_test = config["path"]["annotation_test_dir"] 
     data_dir = config["path"]["data_dir"] # data_dir 경로
 
     for config in config["model"]:
@@ -63,7 +53,6 @@ if __name__ == '__main__':
             box_model_name = get_box_model(config["box_model_name"])
             optimizer = get_optimizer(model, config["optimizer"], lr)
 
-    print(model)
     #=========================config====================================#
 
     # Dataset
@@ -72,7 +61,7 @@ if __name__ == '__main__':
     train_data_loader = DataLoader(
         train_dataset,
         batch_size=batch_size,
-        shuffle=True,
+        shuffle=False,
         num_workers=num_workers,
         collate_fn=collate_fn
     )
@@ -87,11 +76,24 @@ if __name__ == '__main__':
     model.to(device)
 
     # training
-    train_fn(num_epochs, train_data_loader, optimizer, model, device)
-    
-    # wandb 
+    # hyuns add start_id
+    train_fn(start_id, num_epochs, train_data_loader, optimizer, model, device)
 
     # inference
+    #hyuns
+    # test_dataset = CustomDataset(annotation, data_dir)
+    # score_threshold = 0.05
+    # check_point = './checkpoints/faster_rcnn_torchvision_checkpoints.pth' # 체크포인트 경로
+    
+    # test_data_loader = DataLoader(
+    #     test_dataset,
+    #     batch_size=8,
+    #     shuffle=False,
+    #     num_workers=4
+    # )
+
+    # infer_fn()
+
     
     # train_end
     print("-" * 20)
