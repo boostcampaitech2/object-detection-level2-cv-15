@@ -16,3 +16,98 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 986/986, 9.2 task/s, elapsed: 107s, ETA:     0sLoading and preparing results...
+DONE (t=0.04s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2021-10-10 05:37:46,438 - mmdet - INFO - Evaluating bbox...
+DONE (t=3.83s).
+Accumulating evaluation results...
+DONE (t=0.99s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.051
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.098
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.048
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.002
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.004
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.063
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.023
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.223
+2021-10-10 05:37:51,615 - mmdet - INFO - Exp name: k-fold_1.py
+2021-10-10 05:37:51,617 - mmdet - INFO - Epoch(val) [1][986]	bbox_mAP: 0.0510, bbox_mAP_50: 0.0980, bbox_mAP_75: 0.0480, bbox_mAP_s: 0.0020, bbox_mAP_m: 0.0040, bbox_mAP_l: 0.0630, bbox_mAP_copypaste: 0.051 0.098 0.048 0.002 0.004 0.063
+2021-10-10 05:39:26,485 - mmdet - INFO - Epoch [2][50/488]	lr: 9.973e-03, eta: 6:39:34, time: 1.897, data_time: 0.074, memory: 25185, loss_rpn_cls: 0.0663, loss_rpn_bbox: 0.0409, s0.loss_cls: 0.3623, s0.acc: 90.6416, s0.loss_bbox: 0.1593, s1.loss_cls: 0.1690, s1.acc: 91.0364, s1.loss_bbox: 0.1277, s2.loss_cls: 0.0724, s2.acc: 92.3007, s2.loss_bbox: 0.0595, loss: 1.0573
+2021-10-10 05:40:56,108 - mmdet - INFO - Epoch [2][100/488]	lr: 9.973e-03, eta: 6:40:00, time: 1.792, data_time: 0.021, memory: 25185, loss_rpn_cls: 0.0577, loss_rpn_bbox: 0.0415, s0.loss_cls: 0.3504, s0.acc: 90.7144, s0.loss_bbox: 0.1506, s1.loss_cls: 0.1703, s1.acc: 90.7383, s1.loss_bbox: 0.1264, s2.loss_cls: 0.0747, s2.acc: 91.9466, s2.loss_bbox: 0.0602, loss: 1.0316
+Traceback (most recent call last):
+  File "./tools/train.py", line 192, in <module>
+    main()
+  File "./tools/train.py", line 188, in main
+    meta=meta)
+  File "/opt/ml/detection/mmdetection/mmdet/apis/train.py", line 170, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 42, in after_train_iter
+    runner.optimizer.step()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/optim/sgd.py", line 106, in step
+    buf.mul_(momentum).add_(d_p, alpha=1 - dampening)
+KeyboardInterrupt

@@ -4,12 +4,13 @@ _base_ = [
     'schedule.py', 'runtime.py'
 ]
 
-data_root = '/opt/ml/detection/dataset/'
 index = 1
+data_root = '/opt/ml/detection/dataset/'
 train_json = f'train_{index}.json'
 val_json = f'val_{index}.json'
 test_json = 'test.json'
 wandb_runname = f'mmdet_K-Fold_{index}'
+optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
 
 data = dict(
     train=dict(ann_file=data_root + train_json),

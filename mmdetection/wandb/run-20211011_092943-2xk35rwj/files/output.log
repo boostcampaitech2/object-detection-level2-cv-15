@@ -1,0 +1,30 @@
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:323: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:360: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+Traceback (most recent call last):
+  File "./tools/train.py", line 192, in <module>
+    main()
+  File "./tools/train.py", line 188, in main
+    meta=meta)
+  File "/opt/ml/detection/mmdetection/mmdet/apis/train.py", line 170, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 35, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/function.py", line 89, in apply
+    return self._forward_cls.backward(self, *args)  # type: ignore
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/function.py", line 210, in wrapper
+    outputs = fn(ctx, *args)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/ops/roi_align.py", line 112, in backward
+    grad_input = grad_output.new_zeros(ctx.input_shape)
+RuntimeError: CUDA out of memory. Tried to allocate 512.00 MiB (GPU 0; 31.75 GiB total capacity; 30.03 GiB already allocated; 466.75 MiB free; 30.13 GiB reserved in total by PyTorch)

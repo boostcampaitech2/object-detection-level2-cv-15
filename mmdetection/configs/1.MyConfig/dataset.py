@@ -1,5 +1,3 @@
-import 
-
 # dataset settings
 dataset_type = 'CocoDataset'
 data_root = '/opt/ml/detection/dataset/'
@@ -37,6 +35,7 @@ test_pipeline = [
             dict(type='Collect', keys=['img']),
         ])
 ]
+
 data = dict(
     samples_per_gpu=8,
     workers_per_gpu=2,

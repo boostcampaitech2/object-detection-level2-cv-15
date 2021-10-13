@@ -1,0 +1,143 @@
+2021-10-11 09:29:44,349 INFO    MainThread:79331 [internal.py:wandb_internal():89] W&B internal server running at pid: 79331, started at: 2021-10-11 09:29:44.349031
+2021-10-11 09:29:44,352 DEBUG   SenderThread:79331 [sender.py:send():185] send: header
+2021-10-11 09:29:44,353 INFO    WriterThread:79331 [datastore.py:open_for_write():77] open: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/run-2xk35rwj.wandb
+2021-10-11 09:29:44,352 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: check_version
+2021-10-11 09:29:44,353 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: check_version
+2021-10-11 09:29:44,394 DEBUG   SenderThread:79331 [sender.py:send():185] send: run
+2021-10-11 09:29:44,622 INFO    SenderThread:79331 [dir_watcher.py:__init__():169] watching files in: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files
+2021-10-11 09:29:44,622 INFO    SenderThread:79331 [sender.py:_start_run_threads():749] run started: 2xk35rwj with start time 1633944583
+2021-10-11 09:29:44,622 DEBUG   SenderThread:79331 [sender.py:send():185] send: summary
+2021-10-11 09:29:44,622 INFO    SenderThread:79331 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-11 09:29:44,623 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: run_start
+2021-10-11 09:29:44,626 DEBUG   HandlerThread:79331 [meta.py:__init__():40] meta init
+2021-10-11 09:29:44,626 DEBUG   HandlerThread:79331 [meta.py:__init__():54] meta init done
+2021-10-11 09:29:44,627 DEBUG   HandlerThread:79331 [meta.py:probe():211] probe
+2021-10-11 09:29:44,633 DEBUG   HandlerThread:79331 [meta.py:_setup_git():201] setup git
+2021-10-11 09:29:44,650 DEBUG   HandlerThread:79331 [meta.py:_setup_git():208] setup git done
+2021-10-11 09:29:44,650 DEBUG   HandlerThread:79331 [meta.py:_save_pip():58] save pip
+2021-10-11 09:29:44,651 DEBUG   HandlerThread:79331 [meta.py:_save_pip():72] save pip done
+2021-10-11 09:29:44,651 DEBUG   HandlerThread:79331 [meta.py:_save_conda():79] save conda
+2021-10-11 09:29:45,624 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/conda-environment.yaml
+2021-10-11 09:29:45,624 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/requirements.txt
+2021-10-11 09:29:45,624 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/wandb-summary.json
+2021-10-11 09:29:47,381 DEBUG   HandlerThread:79331 [meta.py:_save_conda():87] save conda done
+2021-10-11 09:29:47,381 DEBUG   HandlerThread:79331 [meta.py:probe():249] probe done
+2021-10-11 09:29:47,412 DEBUG   SenderThread:79331 [sender.py:send():185] send: files
+2021-10-11 09:29:47,412 INFO    SenderThread:79331 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-11 09:29:47,417 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 09:29:47,417 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: stop_status
+2021-10-11 09:29:47,627 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/wandb-metadata.json
+2021-10-11 09:29:47,627 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/output.log
+2021-10-11 09:29:48,020 INFO    Thread-11 :79331 [upload_job.py:push():137] Uploaded file /tmp/tmp3ml0g5p6wandb/2kln6bsy-wandb-metadata.json
+2021-10-11 09:29:51,628 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/output.log
+2021-10-11 09:29:53,629 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/output.log
+2021-10-11 09:29:54,442 DEBUG   SenderThread:79331 [sender.py:send():185] send: telemetry
+2021-10-11 09:29:54,442 DEBUG   SenderThread:79331 [sender.py:send():185] send: exit
+2021-10-11 09:29:54,442 INFO    SenderThread:79331 [sender.py:send_exit():294] handling exit code: 1
+2021-10-11 09:29:54,442 INFO    SenderThread:79331 [sender.py:send_exit():296] handling runtime: 9
+2021-10-11 09:29:54,442 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:54,442 INFO    SenderThread:79331 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-11 09:29:54,443 INFO    SenderThread:79331 [sender.py:send_exit():306] send defer
+2021-10-11 09:29:54,443 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:54,443 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:54,443 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-11 09:29:54,444 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:54,444 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 0
+2021-10-11 09:29:54,444 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 1
+2021-10-11 09:29:54,444 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:54,444 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-11 09:29:54,478 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:54,478 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 1
+2021-10-11 09:29:54,478 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 2
+2021-10-11 09:29:54,478 DEBUG   SenderThread:79331 [sender.py:send():185] send: stats
+2021-10-11 09:29:54,479 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:54,479 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-11 09:29:54,479 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:54,479 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 2
+2021-10-11 09:29:54,479 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 3
+2021-10-11 09:29:54,479 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:54,479 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-11 09:29:54,480 DEBUG   SenderThread:79331 [sender.py:send():185] send: summary
+2021-10-11 09:29:54,480 INFO    SenderThread:79331 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-11 09:29:54,480 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:54,480 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 3
+2021-10-11 09:29:54,480 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 4
+2021-10-11 09:29:54,480 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:54,480 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-11 09:29:54,480 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:54,481 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 4
+2021-10-11 09:29:54,544 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:54,630 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/wandb-summary.json
+2021-10-11 09:29:54,630 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/output.log
+2021-10-11 09:29:54,690 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 5
+2021-10-11 09:29:54,690 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:54,691 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:54,691 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 5
+2021-10-11 09:29:54,691 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:54,691 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 5
+2021-10-11 09:29:54,691 INFO    SenderThread:79331 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-11 09:29:54,792 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:55,630 INFO    Thread-8  :79331 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/config.yaml
+2021-10-11 09:29:55,631 INFO    SenderThread:79331 [dir_watcher.py:finish():313] scan: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files
+2021-10-11 09:29:55,631 INFO    SenderThread:79331 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/wandb-metadata.json wandb-metadata.json
+2021-10-11 09:29:55,631 INFO    SenderThread:79331 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/wandb-summary.json wandb-summary.json
+2021-10-11 09:29:55,631 INFO    SenderThread:79331 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/output.log output.log
+2021-10-11 09:29:55,632 INFO    SenderThread:79331 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/conda-environment.yaml conda-environment.yaml
+2021-10-11 09:29:55,635 INFO    SenderThread:79331 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/requirements.txt requirements.txt
+2021-10-11 09:29:55,635 INFO    SenderThread:79331 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/config.yaml config.yaml
+2021-10-11 09:29:55,636 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 6
+2021-10-11 09:29:55,636 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:55,637 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:55,637 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 6
+2021-10-11 09:29:55,637 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:55,637 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 6
+2021-10-11 09:29:55,637 INFO    SenderThread:79331 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-11 09:29:55,738 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:55,738 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:55,840 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:55,840 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:55,942 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:55,942 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:56,044 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:56,044 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:56,146 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:56,146 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:56,195 INFO    Thread-13 :79331 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/output.log
+2021-10-11 09:29:56,199 INFO    Thread-15 :79331 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/config.yaml
+2021-10-11 09:29:56,201 INFO    Thread-14 :79331 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/requirements.txt
+2021-10-11 09:29:56,248 INFO    Thread-12 :79331 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/files/wandb-summary.json
+2021-10-11 09:29:56,248 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:56,249 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:56,351 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:56,351 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:56,449 INFO    Thread-7  :79331 [sender.py:transition_state():319] send defer: 7
+2021-10-11 09:29:56,450 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:56,450 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 7
+2021-10-11 09:29:56,450 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:56,450 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 7
+2021-10-11 09:29:56,452 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:56,633 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 8
+2021-10-11 09:29:56,633 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:56,634 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:56,634 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 8
+2021-10-11 09:29:56,634 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:56,634 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 8
+2021-10-11 09:29:56,634 INFO    SenderThread:79331 [sender.py:transition_state():319] send defer: 9
+2021-10-11 09:29:56,635 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: defer
+2021-10-11 09:29:56,635 INFO    HandlerThread:79331 [handler.py:handle_request_defer():143] handle defer: 9
+2021-10-11 09:29:56,635 DEBUG   SenderThread:79331 [sender.py:send():185] send: final
+2021-10-11 09:29:56,635 DEBUG   SenderThread:79331 [sender.py:send():185] send: footer
+2021-10-11 09:29:56,635 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: defer
+2021-10-11 09:29:56,635 INFO    SenderThread:79331 [sender.py:send_request_defer():315] handle sender defer: 9
+2021-10-11 09:29:56,735 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-11 09:29:56,736 DEBUG   SenderThread:79331 [sender.py:send_request():199] send_request: poll_exit
+2021-10-11 09:29:56,736 INFO    SenderThread:79331 [file_pusher.py:join():182] waiting for file pusher
+2021-10-11 09:29:57,105 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: get_summary
+2021-10-11 09:29:57,106 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: sampled_history
+2021-10-11 09:29:57,107 DEBUG   HandlerThread:79331 [handler.py:handle_request():126] handle_request: shutdown
+2021-10-11 09:29:57,107 INFO    HandlerThread:79331 [handler.py:finish():683] shutting down handler
+2021-10-11 09:29:57,636 INFO    WriterThread:79331 [datastore.py:close():281] close: /opt/ml/detection/mmdetection/wandb/run-20211011_092943-2xk35rwj/run-2xk35rwj.wandb
+2021-10-11 09:29:58,104 INFO    SenderThread:79331 [sender.py:finish():986] shutting down sender
+2021-10-11 09:29:58,104 INFO    SenderThread:79331 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-11 09:29:58,104 INFO    SenderThread:79331 [file_pusher.py:join():182] waiting for file pusher
+2021-10-11 09:29:58,106 INFO    MainThread:79331 [internal.py:handle_exit():76] Internal process exited

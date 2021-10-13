@@ -21,3 +21,13 @@ config: {}
 2021-10-10 05:21:08,787 INFO    MainThread:5038 [wandb_run.py:_redirect():1530] Redirecting console.
 2021-10-10 05:21:08,789 INFO    MainThread:5038 [wandb_run.py:_redirect():1586] Redirects installed.
 2021-10-10 05:21:08,789 INFO    MainThread:5038 [wandb_init.py:init():587] run started, returning control to user process
+2021-10-10 05:41:19,315 INFO    MainThread:5038 [wandb_run.py:_atexit_cleanup():1621] got exitcode: 255
+2021-10-10 05:41:19,316 INFO    MainThread:5038 [wandb_run.py:_restore():1593] restore
+2021-10-10 05:41:21,603 INFO    MainThread:5038 [wandb_run.py:_restore():1593] restore
+2021-10-10 05:41:24,398 ERROR   MainThread:5038 [wandb_run.py:_atexit_cleanup():1639] Problem finishing run
+Traceback (most recent call last):
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1629, in _atexit_cleanup
+    self._on_finish()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1792, in _on_finish
+    print("")
+OSError: [Errno 5] Input/output error

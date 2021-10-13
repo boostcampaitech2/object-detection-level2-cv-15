@@ -230,3 +230,142 @@
 2021-10-10 05:36:05,250 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
 2021-10-10 05:36:06,077 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
 2021-10-10 05:36:06,634 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:08,635 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:10,636 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:12,637 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:14,637 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:16,638 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:18,639 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:20,441 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:36:20,441 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:36:20,640 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:22,641 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:24,642 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:26,642 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:28,643 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:30,644 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:32,645 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:34,646 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:35,633 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:36:35,633 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:36:36,194 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:36:36,647 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:38,647 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:40,648 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:42,649 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:44,650 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:46,651 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:48,652 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:50,653 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:50,820 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:36:50,820 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:36:52,654 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:54,655 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:56,656 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:36:58,656 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:00,657 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:02,658 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:04,659 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:06,014 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:37:06,015 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:37:06,307 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:37:06,660 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:08,661 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:10,662 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:12,663 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:14,664 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:16,664 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:18,665 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:20,666 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:21,202 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:37:21,203 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:37:22,667 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:24,668 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:26,669 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:28,669 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:30,670 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:32,671 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:34,672 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:36,394 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:37:36,394 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:37:36,594 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:37:36,673 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:38,673 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:40,674 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:42,675 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:44,676 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:46,677 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:48,678 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:51,613 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:37:51,613 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:37:51,793 DEBUG   SenderThread:5123 [sender.py:send():185] send: history
+2021-10-10 05:37:51,793 DEBUG   SenderThread:5123 [sender.py:send():185] send: summary
+2021-10-10 05:37:51,794 INFO    SenderThread:5123 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-10 05:37:52,679 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:37:52,679 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/wandb-summary.json
+2021-10-10 05:38:06,527 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:38:06,805 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:38:06,805 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:38:22,021 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:38:22,021 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:38:36,695 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:38:37,219 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:38:37,219 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:38:52,413 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:38:52,414 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:39:06,848 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:39:07,614 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:39:07,615 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:39:22,802 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:39:22,802 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:39:26,490 DEBUG   SenderThread:5123 [sender.py:send():185] send: history
+2021-10-10 05:39:26,490 DEBUG   SenderThread:5123 [sender.py:send():185] send: summary
+2021-10-10 05:39:26,490 INFO    SenderThread:5123 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-10 05:39:26,724 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/wandb-summary.json
+2021-10-10 05:39:28,725 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:39:36,981 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:39:37,988 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:39:37,988 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:39:53,180 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:39:53,180 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:40:07,107 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:40:08,373 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:40:08,374 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:40:23,555 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:40:23,556 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:40:37,221 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:40:38,749 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:40:38,749 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:40:53,939 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:40:53,940 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:40:56,113 DEBUG   SenderThread:5123 [sender.py:send():185] send: history
+2021-10-10 05:40:56,114 DEBUG   SenderThread:5123 [sender.py:send():185] send: summary
+2021-10-10 05:40:56,114 INFO    SenderThread:5123 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-10 05:40:56,759 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/wandb-summary.json
+2021-10-10 05:40:58,759 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:41:07,334 DEBUG   SenderThread:5123 [sender.py:send():185] send: stats
+2021-10-10 05:41:09,129 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-10 05:41:09,129 DEBUG   SenderThread:5123 [sender.py:send_request():199] send_request: stop_status
+2021-10-10 05:41:19,251 WARNING MainThread:5123 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-10-10 05:41:20,769 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:41:21,604 DEBUG   HandlerThread:5123 [handler.py:handle_request():126] handle_request: shutdown
+2021-10-10 05:41:21,605 INFO    HandlerThread:5123 [handler.py:finish():683] shutting down handler
+2021-10-10 05:41:21,770 INFO    Thread-8  :5123 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:41:22,590 INFO    SenderThread:5123 [sender.py:finish():986] shutting down sender
+2021-10-10 05:41:22,590 INFO    SenderThread:5123 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-10 05:41:22,591 INFO    WriterThread:5123 [datastore.py:close():281] close: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/run-vqm1em5x.wandb
+2021-10-10 05:41:22,771 INFO    SenderThread:5123 [dir_watcher.py:finish():313] scan: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files
+2021-10-10 05:41:22,771 INFO    SenderThread:5123 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/wandb-metadata.json wandb-metadata.json
+2021-10-10 05:41:22,771 INFO    SenderThread:5123 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/wandb-summary.json wandb-summary.json
+2021-10-10 05:41:22,771 INFO    SenderThread:5123 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log output.log
+2021-10-10 05:41:22,772 INFO    SenderThread:5123 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/conda-environment.yaml conda-environment.yaml
+2021-10-10 05:41:22,772 INFO    SenderThread:5123 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/requirements.txt requirements.txt
+2021-10-10 05:41:22,773 INFO    SenderThread:5123 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/config.yaml config.yaml
+2021-10-10 05:41:22,780 INFO    SenderThread:5123 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-10 05:41:22,780 INFO    SenderThread:5123 [file_pusher.py:join():182] waiting for file pusher
+2021-10-10 05:41:23,468 INFO    Thread-12 :5123 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/wandb-summary.json
+2021-10-10 05:41:23,483 INFO    Thread-15 :5123 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/requirements.txt
+2021-10-10 05:41:23,497 INFO    Thread-14 :5123 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/conda-environment.yaml
+2021-10-10 05:41:23,502 INFO    Thread-13 :5123 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/output.log
+2021-10-10 05:41:23,505 INFO    Thread-16 :5123 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211010_052103-vqm1em5x/files/config.yaml
+2021-10-10 05:41:24,166 INFO    MainThread:5123 [internal.py:handle_exit():76] Internal process exited

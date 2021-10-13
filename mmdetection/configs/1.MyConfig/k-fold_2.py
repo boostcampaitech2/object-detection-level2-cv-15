@@ -1,36 +1,37 @@
 _base_ = [
     'model1.py',
-    'dataset.py',
+    'dataset1.py',
     'schedule.py', 'runtime.py'
 ]
 
-data_root = '/opt/ml/detection/dataset/'
 index = 2
+data_root = '/opt/ml/detection/dataset/'
 train_json = f'train_{index}.json'
 val_json = f'val_{index}.json'
 test_json = 'test.json'
 wandb_runname = f'mmdet_K-Fold_{index}'
+optimizer = dict(type='SGD', lr=0.01, momentum=0.9, weight_decay=0.0001)
 
 data = dict(
-    train=dict(ann_file=data_root + train_json),
+    train=dict(dataset=dict(ann_file=data_root + train_json)),
     val=dict(ann_file=data_root + val_json),
     test=dict(ann_file=data_root + test_json)
     )
 
-model = dict(
-    backbone=dict(
-        _delete_=True,
-        type='ResNeXt',
-        depth=101,
-        groups=32,
-        base_width=4,
-        num_stages=4,
-        out_indices=(0, 1, 2, 3),
-        frozen_stages=1,
-        norm_cfg=dict(type='BN', requires_grad=True),
-        style='pytorch',
-        init_cfg=dict(
-            type='Pretrained', checkpoint='open-mmlab://resnext101_32x4d')))
+# model = dict(
+#     backbone=dict(
+#         _delete_=True,
+#         type='ResNeXt',
+#         depth=101,
+#         groups=32,
+#         base_width=4,
+#         num_stages=4,
+#         out_indices=(0, 1, 2, 3),
+#         frozen_stages=1,
+#         norm_cfg=dict(type='BN', requires_grad=True),
+#         style='pytorch',
+#         init_cfg=dict(
+#             type='Pretrained', checkpoint='open-mmlab://resnext101_32x4d')))
 
 log_config = dict(
     interval=50,

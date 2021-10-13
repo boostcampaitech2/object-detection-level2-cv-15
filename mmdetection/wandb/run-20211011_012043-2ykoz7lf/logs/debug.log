@@ -1,0 +1,146 @@
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [wandb_init.py:_log_setup():357] Logging user logs to /opt/ml/detection/mmdetection/wandb/run-20211011_012043-2ykoz7lf/logs/debug.log
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [wandb_init.py:_log_setup():358] Logging internal logs to /opt/ml/detection/mmdetection/wandb/run-20211011_012043-2ykoz7lf/logs/debug-internal.log
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [wandb_init.py:init():390] calling init triggers
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [wandb_init.py:init():397] wandb.init called with sweep_config: {}
+config: {}
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [wandb_init.py:init():435] starting backend
+2021-10-11 01:20:43,318 INFO    MainThread:75811 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-11 01:20:43,360 INFO    MainThread:75811 [backend.py:ensure_launched():135] starting backend process...
+2021-10-11 01:20:43,401 INFO    MainThread:75811 [backend.py:ensure_launched():140] started backend process with pid: 75850
+2021-10-11 01:20:43,405 INFO    MainThread:75811 [wandb_init.py:init():440] backend started and connected
+2021-10-11 01:20:43,406 INFO    MainThread:75811 [wandb_init.py:init():499] updated telemetry
+2021-10-11 01:20:43,407 INFO    MainThread:75811 [wandb_init.py:init():522] communicating current version
+2021-10-11 01:20:44,262 INFO    MainThread:75811 [wandb_init.py:init():527] got version response upgrade_message: "wandb version 0.12.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-10-11 01:20:44,262 INFO    MainThread:75811 [wandb_init.py:init():535] communicating run to backend with 30 second timeout
+2021-10-11 01:20:44,494 INFO    MainThread:75811 [wandb_init.py:init():562] starting run threads in backend
+2021-10-11 01:20:48,955 INFO    MainThread:75811 [wandb_run.py:_console_start():1651] atexit reg
+2021-10-11 01:20:48,956 INFO    MainThread:75811 [wandb_run.py:_redirect():1525] redirect: SettingsConsole.REDIRECT
+2021-10-11 01:20:48,956 INFO    MainThread:75811 [wandb_run.py:_redirect():1530] Redirecting console.
+2021-10-11 01:20:48,958 INFO    MainThread:75811 [wandb_run.py:_redirect():1586] Redirects installed.
+2021-10-11 01:20:48,958 INFO    MainThread:75811 [wandb_init.py:init():587] run started, returning control to user process
+2021-10-11 02:03:21,178 INFO    MainThread:75811 [wandb_run.py:_atexit_cleanup():1621] got exitcode: 255
+2021-10-11 02:03:21,178 INFO    MainThread:75811 [wandb_run.py:_restore():1593] restore
+2021-10-11 02:03:23,217 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 822
+  total_bytes: 822
+}
+
+2021-10-11 02:03:23,508 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 1
+}
+pusher_stats {
+  uploaded_bytes: 822
+  total_bytes: 822
+}
+
+2021-10-11 02:03:23,610 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 822
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:23,711 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 822
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:23,813 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 822
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:23,915 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 20372
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:24,017 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 20372
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:24,118 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 20372
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:24,220 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 20372
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:24,322 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 20372
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:24,783 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 20372
+  total_bytes: 20372
+}
+
+2021-10-11 02:03:25,252 INFO    MainThread:75811 [wandb_run.py:_wait_for_finish():1746] got exit ret: done: true
+exit_result {
+}
+file_counts {
+  wandb_count: 6
+}
+pusher_stats {
+  uploaded_bytes: 20372
+  total_bytes: 20372
+}
+local_info {
+}
+
+2021-10-11 02:03:25,252 INFO    MainThread:75811 [wandb_run.py:_restore():1593] restore
+2021-10-11 02:03:26,432 ERROR   MainThread:75811 [wandb_run.py:_atexit_cleanup():1639] Problem finishing run
+Traceback (most recent call last):
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1629, in _atexit_cleanup
+    self._on_finish()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1805, in _on_finish
+    self._poll_exit_response = self._wait_for_finish()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1752, in _wait_for_finish
+    self._on_finish_progress(pusher_stats, done)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1740, in _on_finish_progress
+    self._pusher_print_status(progress, done=done)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_run.py", line 1722, in _pusher_print_status
+    wandb.termlog(line, newline=False, prefix=prefix)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/errors/term.py", line 41, in termlog
+    silent=not _show_info,
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/errors/term.py", line 94, in _log
+    click.echo(line, file=sys.stderr, nl=newline)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/click/utils.py", line 272, in echo
+    file.write(message)
+OSError: [Errno 5] Input/output error

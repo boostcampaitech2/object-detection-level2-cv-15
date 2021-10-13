@@ -1,17 +1,19 @@
 _base_ = [
-    'model1.py',
-    'dataset.py',
-    'schedule.py', 'runtime.py'
+    'model2.py',
+    'dataset2.py',
+    'schedule2.py', 'runtime.py'
 ]
 
-data_root = '/opt/ml/detection/dataset/'
 index = 3
+data_root = '/opt/ml/detection/dataset/'
 train_json = f'train_{index}.json'
 val_json = f'val_{index}.json'
 test_json = 'test.json'
 wandb_runname = f'mmdet_K-Fold_{index}'
+optimizer = dict(type='SGD', lr=0.005, momentum=0.9, weight_decay=0.0001)
 
 data = dict(
+    samples_per_gpu=4,
     train=dict(ann_file=data_root + train_json),
     val=dict(ann_file=data_root + val_json),
     test=dict(ann_file=data_root + test_json)
