@@ -1,16 +1,25 @@
 {
     "training" : {
-        "id" : 1
+        "id" : 4,
+        "fold_num" : 5
+    },
+
+    "wandb" : {
+        "wandb_project_name" : "garbage_Detection",
+        "wandb_group_name" : "garbage_detection_scorethre_0.1_t",
+        "wandb_entity" : "hyunsoo"
     },
 
     "path" : {
-        "annotation_train_dir" : "../../dataset/train_1.json",
-        "annotation_valid_dir" : "../../dataset/val_1.json",
+        "annotation_dir" : "../../dataset/train.json",
         "annotation_test_dir" : "../../dataset/test.json",
-        "data_dir" : "../../dataset"
+        "data_dir" : "../../dataset",
+        "save_model_path" : "./checkpoints/",
+        "save_submission_path" : "./submission_test/"
     },
 
-    "model" : [{
+    "model" : [
+        {
         "id" : 1,
         "model_name" : "fasterrcnn_resnet50_fpn",
         "box_model_name" : "FastRCNNPredictor",
@@ -19,7 +28,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 2,
@@ -30,7 +42,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 3,
@@ -41,7 +56,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 4,
@@ -52,7 +70,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 6,
+        "score_threshold" : 0.1
     },
     {
         "id" : 5,
@@ -63,7 +84,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 6,
@@ -74,7 +98,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 7,
@@ -85,7 +112,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     }
     ]
     
