@@ -49,8 +49,8 @@ def get_train_transform():
             #A.MedianBlur(blur_limit=51, p=0.1),
             A.ToGray(p=0.3),
             A.Flip(p=0.5),
-            ToTensorV2(p=1.0)],
-            bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})
+            ToTensorV2(p=1.0)],  
+            bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})  #argument
 
 
 #default

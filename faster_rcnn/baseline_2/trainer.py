@@ -58,13 +58,13 @@ def train_fn(num_epochs, train_data_loader, optimizer, model, device):
 
         print(f"Epoch #{epoch+1} loss: {loss_hist.value}")
                 
-        if epoch in[4,8,12,16]:
+        if epoch in[4,8,12,16,20]:
             for g in optimizer.param_groups:
                 g['lr']/=10
                 print('Loss 1/10')
                 print("f{lr}")
         if loss_hist.value < best_loss:
-            save_path = './checkpoints/faster_rcnn_torchvision_checkpoints.pth'
+            save_path = './checkpoints/faster_rcnn_torchvision_checkpoints_faster_Rcnn.pth'
             save_dir = os.path.dirname(save_path)
             if not os.path.exists(save_dir):
                 os.makedirs(save_dir)
