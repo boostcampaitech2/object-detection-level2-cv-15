@@ -1,5 +1,7 @@
 *.jpg
 *.pth
+*.csv
+*checkpoints*/
 dataset/
 *pycache*/
-baseline_2_hyuns/
+*wandb*/

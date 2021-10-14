@@ -1,0 +1,35 @@
+2021-10-10 05:14:15,330 INFO    MainThread:4004 [wandb_setup.py:_flush():69] setting env: {}
+2021-10-10 05:14:15,330 INFO    MainThread:4004 [wandb_setup.py:_flush():69] setting login settings: {}
+2021-10-10 05:14:15,330 INFO    MainThread:4004 [wandb_init.py:_log_setup():357] Logging user logs to /opt/ml/detection/mmdetection/wandb/run-20211010_051415-327hbrof/logs/debug.log
+2021-10-10 05:14:15,330 INFO    MainThread:4004 [wandb_init.py:_log_setup():358] Logging internal logs to /opt/ml/detection/mmdetection/wandb/run-20211010_051415-327hbrof/logs/debug-internal.log
+2021-10-10 05:14:15,331 INFO    MainThread:4004 [wandb_init.py:init():390] calling init triggers
+2021-10-10 05:14:15,331 INFO    MainThread:4004 [wandb_init.py:init():397] wandb.init called with sweep_config: {}
+config: {}
+2021-10-10 05:14:15,331 INFO    MainThread:4004 [wandb_init.py:init():435] starting backend
+2021-10-10 05:14:15,331 INFO    MainThread:4004 [backend.py:_multiprocessing_setup():72] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2021-10-10 05:14:15,366 INFO    MainThread:4004 [backend.py:ensure_launched():135] starting backend process...
+2021-10-10 05:14:15,402 INFO    MainThread:4004 [backend.py:ensure_launched():140] started backend process with pid: 4103
+2021-10-10 05:14:15,404 INFO    MainThread:4004 [wandb_init.py:init():440] backend started and connected
+2021-10-10 05:14:15,407 INFO    MainThread:4004 [wandb_init.py:init():499] updated telemetry
+2021-10-10 05:14:15,407 INFO    MainThread:4004 [wandb_init.py:init():522] communicating current version
+2021-10-10 05:14:16,278 INFO    MainThread:4004 [wandb_init.py:init():527] got version response upgrade_message: "wandb version 0.12.4 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2021-10-10 05:14:16,278 INFO    MainThread:4004 [wandb_init.py:init():535] communicating run to backend with 30 second timeout
+2021-10-10 05:14:16,507 INFO    MainThread:4004 [wandb_init.py:init():562] starting run threads in backend
+2021-10-10 05:14:17,561 WARNING MainThread:4004 [wandb_init.py:init():829] interrupted
+Traceback (most recent call last):
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 808, in init
+    run = wi.init()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/wandb_init.py", line 565, in init
+    _ = backend.interface.communicate_run_start(run_obj)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 801, in communicate_run_start
+    result = self._communicate(rec)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 539, in _communicate
+    return self._communicate_async(rec, local=local).get(timeout=timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/wandb/sdk/interface/interface.py", line 77, in get
+    is_set = self._object_ready.wait(timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/threading.py", line 552, in wait
+    signaled = self._cond.wait(timeout)
+  File "/opt/conda/envs/detection/lib/python3.7/threading.py", line 300, in wait
+    gotit = waiter.acquire(True, timeout)
+KeyboardInterrupt

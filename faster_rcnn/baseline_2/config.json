@@ -1,50 +1,150 @@
 {
     "training" : {
-        "model_name" : "retinanet_resnet50_fpn",
-        "box_model_name" : "FastRCNNPredictor",
-        "Optimizer": "SGD"
+        "id" : 9,
+        "fold_num" : 5
     },
 
-    "model" : [{
-        "model_name" : "fasterrcnn_resnet50_fpn",
-        "box_model_name" : "FastRCNNPredictor"
-    },
-    {
-        "model_name" : "fasterrcnn_mobilenet_v3_large_fpn",
-        "box_model_name" : "FastRCNNPredictor"
-    },
-    {
-        "model_name" : "mobilenet_v3_large_320_fpn",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "retinanet_resnet50_fpn",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "ssd300_vgg16",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "maskrcnn_resnet50_fpn",
-        "box_model_name" : "None"
-    },
-    {
-        "model_name" : "keypointrcnn_resnet50_fpn",
-        "box_model_name" : "None"
-    }
-    ],
-
-    "h_param" : {
-        "num_epochs" : 20,
-        "batch_size" : 16,
-        "lr" : 0.01,
-        "num_workers" : 1,
-        "num_classes" : 11
+    "wandb" : {
+        "wandb_project_name" : "garbage_Detection",
+        "wandb_group_name" : "fasterrcnn_mobilenet_v3_large_320_fpn_scorethre_0.2_no_pseudo",
+        "wandb_entity" : "hyunsoo"
     },
 
     "path" : {
         "annotation_dir" : "../../dataset/train.json",
-        "data_dir" : "../../dataset"
+        "annotation_test_dir" : "../../dataset/test.json",
+        "data_dir" : "../../dataset",
+        "save_model_path" : "./checkpoints/",
+        "save_submission_path" : "./submission_test/"
+    },
+
+    "model" : [
+        {
+        "id" : 1,
+        "model_name" : "fasterrcnn_resnet50_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
+    },
+    {
+        "id" : 2,
+        "model_name" : "fasterrcnn_mobilenet_v3_large_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
+    },
+    {
+        "id" : 3,
+        "model_name" : "fasterrcnn_mobilenet_v3_large_320_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
+    },
+    {
+        "id" : 4,
+        "model_name" : "retinanet_resnet50_fpn",
+        "box_model_name" : "None",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 6,
+        "score_threshold" : 0.1
+    },
+    {
+        "id" : 5,
+        "model_name" : "ssd300_vgg16",
+        "box_model_name" : "None",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
+    },
+    {
+        "id" : 6,
+        "model_name" : "maskrcnn_resnet50_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
+    },
+    {
+        "id" : 7,
+        "model_name" : "keypointrcnn_resnet50_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
+    },
+    {
+        "id" : 8,
+        "model_name" : "retinanet_resnet50_fpn",
+        "box_model_name" : "None",
+        "num_epochs" : 13,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 7,
+        "score_threshold" : 0.3
+    },
+    {
+        "id" : 9,
+        "model_name" : "fasterrcnn_mobilenet_v3_large_320_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 13,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 6,
+        "score_threshold" : 0.2
     }
+    ]
+    
 }

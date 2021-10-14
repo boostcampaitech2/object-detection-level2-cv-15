@@ -1,0 +1,38 @@
+Traceback (most recent call last):
+  File "./tools/train.py", line 192, in <module>
+    main()
+  File "./tools/train.py", line 188, in main
+    meta=meta)
+  File "/opt/ml/detection/mmdetection/mmdet/apis/train.py", line 170, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 47, in train
+    for i, data_batch in enumerate(self.data_loader):
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1085, in _next_data
+    return self._process_data(data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/utils/data/dataloader.py", line 1111, in _process_data
+    data.reraise()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/_utils.py", line 428, in reraise
+    raise self.exc_type(msg)
+AssertionError: Caught AssertionError in DataLoader worker process 0.
+Original Traceback (most recent call last):
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/utils/data/_utils/worker.py", line 198, in _worker_loop
+    data = fetcher.fetch(index)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/opt/ml/detection/mmdetection/mmdet/datasets/custom.py", line 194, in __getitem__
+    data = self.prepare_train_img(idx)
+  File "/opt/ml/detection/mmdetection/mmdet/datasets/custom.py", line 217, in prepare_train_img
+    return self.pipeline(results)
+  File "/opt/ml/detection/mmdetection/mmdet/datasets/pipelines/compose.py", line 40, in __call__
+    data = t(data)
+  File "/opt/ml/detection/mmdetection/mmdet/datasets/pipelines/transforms.py", line 1989, in __call__
+    results = self._mosaic_transform(results)
+  File "/opt/ml/detection/mmdetection/mmdet/datasets/pipelines/transforms.py", line 2015, in _mosaic_transform
+    assert 'mix_results' in results
+AssertionError

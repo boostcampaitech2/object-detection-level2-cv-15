@@ -1,0 +1,26 @@
+{
+    "os": "Linux-4.4.0-59-generic-x86_64-with-debian-buster-sid",
+    "python": "3.7.11",
+    "heartbeatAt": "2021-10-11T01:16:05.068469",
+    "startedAt": "2021-10-11T01:16:03.920666",
+    "docker": null,
+    "gpu": "Tesla V100-SXM2-32GB",
+    "gpu_count": 1,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [
+        "./configs/1.MyConfig/k-fold_2.py"
+    ],
+    "state": "running",
+    "program": "./tools/train.py",
+    "codePath": "mmdetection/tools/train.py",
+    "git": {
+        "remote": "https://github.com/boostcampaitech2/object-detection-level2-cv-15.git",
+        "commit": "6eb41ac8696f9ffc4a3121b7bf2408f2ef30e146"
+    },
+    "email": "falling90@naver.com",
+    "root": "/opt/ml/detection",
+    "host": "b4c81fddccab",
+    "username": "root",
+    "executable": "/opt/conda/envs/detection/bin/python"
+}

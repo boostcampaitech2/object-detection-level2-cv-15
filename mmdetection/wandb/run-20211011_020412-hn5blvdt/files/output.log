@@ -1,0 +1,49 @@
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:323: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:360: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-11 02:06:10,255 - mmdet - INFO - Epoch [1][50/1951]	lr: 9.890e-04, eta: 1 day, 12:17:22, time: 2.234, data_time: 0.071, memory: 25186, loss_rpn_cls: 0.6470, loss_rpn_bbox: 0.1158, s0.loss_cls: 0.3785, s0.acc: 92.6953, s0.loss_bbox: 0.0646, s1.loss_cls: 0.2580, s1.acc: 86.0039, s1.loss_bbox: 0.0247, s2.loss_cls: 0.1869, s2.acc: 80.2500, s2.loss_bbox: 0.0078, loss: 1.6834
+2021-10-11 02:07:58,029 - mmdet - INFO - Epoch [1][100/1951]	lr: 1.988e-03, eta: 1 day, 11:37:17, time: 2.155, data_time: 0.017, memory: 26755, loss_rpn_cls: 0.3991, loss_rpn_bbox: 0.1373, s0.loss_cls: 0.5109, s0.acc: 89.9336, s0.loss_bbox: 0.1826, s1.loss_cls: 0.1720, s1.acc: 93.9473, s1.loss_bbox: 0.0530, s2.loss_cls: 0.0682, s2.acc: 95.5391, s2.loss_bbox: 0.0091, loss: 1.5322
+2021-10-11 02:09:46,196 - mmdet - INFO - Epoch [1][150/1951]	lr: 2.987e-03, eta: 1 day, 11:25:16, time: 2.163, data_time: 0.017, memory: 26755, loss_rpn_cls: 0.3123, loss_rpn_bbox: 0.1319, s0.loss_cls: 0.3014, s0.acc: 94.7598, s0.loss_bbox: 0.0740, s1.loss_cls: 0.1067, s1.acc: 96.3047, s1.loss_bbox: 0.0205, s2.loss_cls: 0.0459, s2.acc: 96.8496, s2.loss_bbox: 0.0041, loss: 0.9968
+Traceback (most recent call last):
+  File "./tools/train.py", line 192, in <module>
+    main()
+  File "./tools/train.py", line 188, in main
+    meta=meta)
+  File "/opt/ml/detection/mmdetection/mmdet/apis/train.py", line 170, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 50, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 30, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 67, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/ml/detection/mmdetection/mmdet/models/detectors/base.py", line 237, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 98, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/detectors/base.py", line 171, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/detectors/two_stage.py", line 140, in forward_train
+    proposal_cfg=proposal_cfg)
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/base_dense_head.py", line 54, in forward_train
+    losses = self.loss(*loss_inputs, gt_bboxes_ignore=gt_bboxes_ignore)
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/rpn_head.py", line 74, in loss
+    gt_bboxes_ignore=gt_bboxes_ignore)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 186, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/anchor_head.py", line 489, in loss
+    num_total_samples=num_total_samples)
+  File "/opt/ml/detection/mmdetection/mmdet/core/utils/misc.py", line 29, in multi_apply
+    return tuple(map(list, zip(*map_results)))
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/anchor_head.py", line 404, in loss_single
+    cls_score, labels, label_weights, avg_factor=num_total_samples)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/losses/cross_entropy_loss.py", line 249, in forward
+    **kwargs)
+KeyboardInterrupt

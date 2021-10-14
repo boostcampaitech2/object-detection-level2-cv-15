@@ -1,0 +1,28 @@
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:323: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:360: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-11 03:55:07,132 - mmdet - INFO - Epoch [1][50/489]	lr: 1.978e-02, eta: 7:27:40, time: 1.837, data_time: 0.076, memory: 25186, loss_rpn_cls: nan, loss_rpn_bbox: nan, s0.loss_cls: nan, s0.acc: 79.1964, s0.loss_bbox: nan, s1.loss_cls: nan, s1.acc: 79.3584, s1.loss_bbox: nan, s2.loss_cls: nan, s2.acc: 78.9346, s2.loss_bbox: nan, loss: nan
+2021-10-11 03:56:23,609 - mmdet - INFO - Epoch [1][100/489]	lr: 3.976e-02, eta: 6:48:47, time: 1.530, data_time: 0.021, memory: 25186, loss_rpn_cls: nan, loss_rpn_bbox: nan, s0.loss_cls: nan, s0.acc: 20.7646, s0.loss_bbox: nan, s1.loss_cls: nan, s1.acc: 20.7646, s1.loss_bbox: nan, s2.loss_cls: nan, s2.acc: 20.7646, s2.loss_bbox: nan, loss: nan
+2021-10-11 03:57:39,805 - mmdet - INFO - Epoch [1][150/489]	lr: 5.974e-02, eta: 6:34:30, time: 1.524, data_time: 0.021, memory: 25186, loss_rpn_cls: nan, loss_rpn_bbox: nan, s0.loss_cls: nan, s0.acc: 16.0919, s0.loss_bbox: nan, s1.loss_cls: nan, s1.acc: 16.0919, s1.loss_bbox: nan, s2.loss_cls: nan, s2.acc: 16.0919, s2.loss_bbox: nan, loss: nan
+2021-10-11 03:58:57,514 - mmdet - INFO - Epoch [1][200/489]	lr: 7.972e-02, eta: 6:28:34, time: 1.554, data_time: 0.022, memory: 25186, loss_rpn_cls: nan, loss_rpn_bbox: nan, s0.loss_cls: nan, s0.acc: 19.0418, s0.loss_bbox: nan, s1.loss_cls: nan, s1.acc: 19.0418, s1.loss_bbox: nan, s2.loss_cls: nan, s2.acc: 19.0418, s2.loss_bbox: nan, loss: nan
+Traceback (most recent call last):
+  File "./tools/train.py", line 192, in <module>
+    main()
+  File "./tools/train.py", line 188, in main
+    meta=meta)
+  File "/opt/ml/detection/mmdetection/mmdet/apis/train.py", line 170, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 35, in after_train_iter
+    runner.outputs['loss'].backward()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/__init__.py", line 132, in backward
+    allow_unreachable=True)  # allow_unreachable flag
+KeyboardInterrupt
