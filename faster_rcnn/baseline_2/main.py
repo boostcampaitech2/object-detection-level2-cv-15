@@ -9,8 +9,10 @@ from albumentations.pytorch import ToTensorV2
 import torch
 # faster rcnn model이 포함된 library
 import torchvision
-
+from torchvision.models.detection import FasterRCNN
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
+from torchvision.models.detection import *
+
 
 from torch.utils.data import DataLoader, Dataset
 import pandas as pd
@@ -188,6 +190,17 @@ if __name__ == '__main__':
     # inference
     device = torch.device('cuda') if torch.cuda.is_available() else torch.device('cpu')
     print(device)
+    #소정
+    # custom_rpn = AnchorGenerator(sizes=((32, 64, 128, 512)), aspect_ratios=((0.5, 1.0, 2.0))) 
+    # roi_pooler = torchvision.ops.MultiScaleRoIAlign(featmap_names=[0], output_size=7, sampling_ratio=2)
+    # torchvision model 불러오기
+
+    #num_classes = 11 # class 개수= 10 + backgroundb
+    # get number of input features for the classifier
+    #in_features = model.roi_heads.box_predictor.cls_score.in_features
+    #model.roi_heads.box_predictor = get_box_model(config)
+    # model.roi_heads.box_predictor = FastRCNNPredictor(in_features, num_classes) 
+    # box model 점검
 
     submission_files=[]
     for check_point in checkpoints:

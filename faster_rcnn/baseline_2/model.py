@@ -3,15 +3,16 @@ from pycocotools.cocoeval import COCOeval
 import numpy as np
 import cv2
 import os
-
 import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
 import torch
 # faster rcnn model이 포함된 library
 import torchvision
-
+from torchvision.models.detection import *
 from torchvision.models.detection.faster_rcnn import FastRCNNPredictor
+#from torchvision.models.detection.mask_rcnn import MaskRCNNPredictor
+
 
 from torch.utils.data import DataLoader, Dataset
 import pandas as pd
@@ -24,14 +25,28 @@ from dataset import get_train_transform
 from model import * #model list file 불러오기
 from optimizer import *
 
+from torchvision.models.mobilenetv2 import _make_divisible, ConvBNActivation
+
+
+# from .rpn import RPNHead, RegionProposalNetwork
+# from .roi_heads import RoIHeads
+# from .transform import GeneralizedRCNNTransform
+# from .backbone_utils import resnet_fpn_backbone, _validate_trainable_layers, mobilenet_backbone
+
 def get_model(model_name):
     
     if model_name == 'fasterrcnn_resnet50_fpn':
         model_name = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
     elif model_name == 'fasterrcnn_mobilenet_v3_large_fpn':
+<<<<<<< HEAD
+        model_name = torchvision.models.detection.faster_rcnn.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
+    elif model_name == 'mobilenet_v3_large_320_fpn':
+        model_name = torchvision.models.detection.faster_rcnn.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
+=======
         model_name = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
     elif model_name == 'fasterrcnn_mobilenet_v3_large_320_fpn':
         model_name = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
+>>>>>>> 6df8a73ec7c456a8ce69ec5e9a6a22b69bdb7545
     elif model_name == 'retinanet_resnet50_fpn':
         model_name = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)     
     elif model_name == 'ssd300_vgg16':
