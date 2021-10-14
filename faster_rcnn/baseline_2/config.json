@@ -1,16 +1,25 @@
 {
     "training" : {
-        "id" : 3
+        "id" : 9,
+        "fold_num" : 5
+    },
+
+    "wandb" : {
+        "wandb_project_name" : "garbage_Detection",
+        "wandb_group_name" : "fasterrcnn_mobilenet_v3_large_320_fpn_scorethre_0.2_no_pseudo",
+        "wandb_entity" : "hyunsoo"
     },
 
     "path" : {
         "annotation_dir" : "../../dataset/train.json",
+        "annotation_test_dir" : "../../dataset/test.json",
         "data_dir" : "../../dataset",
-        "test_annotation_dir":"../../dataset/test.json",
-        "model_checkpoint":"../baseline_2/checkpoints/faster_rcnn_torchvision_checkpoints_faster_Rcnn.pth"
+        "save_model_path" : "./checkpoints/",
+        "save_submission_path" : "./submission_test/"
     },
 
-    "model" : [{
+    "model" : [
+        {
         "id" : 1,
         "model_name" : "fasterrcnn_resnet50_fpn",
         "box_model_name" : "FastRCNNPredictor",
@@ -19,7 +28,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 2,
@@ -30,18 +42,24 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 3,
-        "model_name" : "mobilenet_v3_large_320_fpn",
+        "model_name" : "fasterrcnn_mobilenet_v3_large_320_fpn",
         "box_model_name" : "FastRCNNPredictor",
         "num_epochs" : 22,
         "batch_size" : 16,
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 4,
@@ -52,7 +70,10 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 6,
+        "score_threshold" : 0.1
     },
     {
         "id" : 5,
@@ -63,40 +84,66 @@
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 6,
         "model_name" : "maskrcnn_resnet50_fpn",
-        "box_model_name" : "None",
-        "num_epochs" : 22,
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 20,
         "batch_size" : 16,
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 7,
         "model_name" : "keypointrcnn_resnet50_fpn",
-        "box_model_name" : "None",
+        "box_model_name" : "FastRCNNPredictor",
         "num_epochs" : 20,
         "batch_size" : 16,
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 5,
+        "score_threshold" : 0.05
     },
     {
         "id" : 8,
-        "model_name" : "keypointrcnn_resnet50_fpn",
+        "model_name" : "retinanet_resnet50_fpn",
         "box_model_name" : "None",
-        "num_epochs" : 20,
+        "num_epochs" : 13,
         "batch_size" : 16,
         "lr" : 0.01,
         "num_workers" : 1,
         "num_classes" : 11,
-        "optimizer": "SGD"
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 7,
+        "score_threshold" : 0.3
+    },
+    {
+        "id" : 9,
+        "model_name" : "fasterrcnn_mobilenet_v3_large_320_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 13,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 6,
+        "score_threshold" : 0.2
     }
     ]
     

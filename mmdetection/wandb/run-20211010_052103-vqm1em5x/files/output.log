@@ -1,0 +1,113 @@
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:323: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:360: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+2021-10-10 05:22:43,067 - mmdet - INFO - Epoch [1][50/488]	lr: 1.882e-03, eta: 7:38:27, time: 1.885, data_time: 0.074, memory: 25185, loss_rpn_cls: 0.3430, loss_rpn_bbox: 0.0497, s0.loss_cls: 0.4335, s0.acc: 91.5781, s0.loss_bbox: 0.1375, s1.loss_cls: 0.1445, s1.acc: 94.8818, s1.loss_bbox: 0.0444, s2.loss_cls: 0.0758, s2.acc: 93.4609, s2.loss_bbox: 0.0098, loss: 1.2380
+2021-10-10 05:24:12,392 - mmdet - INFO - Epoch [1][100/488]	lr: 2.782e-03, eta: 7:24:54, time: 1.786, data_time: 0.021, memory: 25185, loss_rpn_cls: 0.1248, loss_rpn_bbox: 0.0383, s0.loss_cls: 0.2782, s0.acc: 94.1724, s0.loss_bbox: 0.1265, s1.loss_cls: 0.0944, s1.acc: 96.5073, s1.loss_bbox: 0.0574, s2.loss_cls: 0.0301, s2.acc: 98.1611, s2.loss_bbox: 0.0116, loss: 0.7612
+2021-10-10 05:25:43,377 - mmdet - INFO - Epoch [1][150/488]	lr: 3.682e-03, eta: 7:22:04, time: 1.820, data_time: 0.022, memory: 25185, loss_rpn_cls: 0.1174, loss_rpn_bbox: 0.0406, s0.loss_cls: 0.2978, s0.acc: 93.0767, s0.loss_bbox: 0.1394, s1.loss_cls: 0.1109, s1.acc: 95.3125, s1.loss_bbox: 0.0754, s2.loss_cls: 0.0373, s2.acc: 97.3882, s2.loss_bbox: 0.0191, loss: 0.8379
+2021-10-10 05:27:14,157 - mmdet - INFO - Epoch [1][200/488]	lr: 4.582e-03, eta: 7:19:38, time: 1.816, data_time: 0.022, memory: 25185, loss_rpn_cls: 0.1069, loss_rpn_bbox: 0.0477, s0.loss_cls: 0.3748, s0.acc: 91.0791, s0.loss_bbox: 0.1780, s1.loss_cls: 0.1537, s1.acc: 92.9028, s1.loss_bbox: 0.1110, s2.loss_cls: 0.0575, s2.acc: 95.2300, s2.loss_bbox: 0.0378, loss: 1.0673
+2021-10-10 05:28:44,286 - mmdet - INFO - Epoch [1][250/488]	lr: 5.482e-03, eta: 7:16:57, time: 1.803, data_time: 0.021, memory: 25185, loss_rpn_cls: 0.0906, loss_rpn_bbox: 0.0488, s0.loss_cls: 0.3712, s0.acc: 91.0732, s0.loss_bbox: 0.1790, s1.loss_cls: 0.1537, s1.acc: 92.7455, s1.loss_bbox: 0.1107, s2.loss_cls: 0.0608, s2.acc: 94.6728, s2.loss_bbox: 0.0420, loss: 1.0568
+2021-10-10 05:30:14,684 - mmdet - INFO - Epoch [1][300/488]	lr: 6.382e-03, eta: 7:14:53, time: 1.808, data_time: 0.022, memory: 25185, loss_rpn_cls: 0.0775, loss_rpn_bbox: 0.0410, s0.loss_cls: 0.3577, s0.acc: 91.2783, s0.loss_bbox: 0.1609, s1.loss_cls: 0.1590, s1.acc: 92.0201, s1.loss_bbox: 0.1161, s2.loss_cls: 0.0666, s2.acc: 93.5785, s2.loss_bbox: 0.0506, loss: 1.0294
+2021-10-10 05:31:46,260 - mmdet - INFO - Epoch [1][350/488]	lr: 7.282e-03, eta: 7:13:46, time: 1.832, data_time: 0.022, memory: 25185, loss_rpn_cls: 0.0610, loss_rpn_bbox: 0.0391, s0.loss_cls: 0.3542, s0.acc: 91.3057, s0.loss_bbox: 0.1531, s1.loss_cls: 0.1616, s1.acc: 91.7034, s1.loss_bbox: 0.1180, s2.loss_cls: 0.0682, s2.acc: 93.0082, s2.loss_bbox: 0.0540, loss: 1.0092
+2021-10-10 05:33:16,087 - mmdet - INFO - Epoch [1][400/488]	lr: 8.182e-03, eta: 7:11:31, time: 1.797, data_time: 0.021, memory: 25185, loss_rpn_cls: 0.0813, loss_rpn_bbox: 0.0464, s0.loss_cls: 0.3568, s0.acc: 91.1079, s0.loss_bbox: 0.1629, s1.loss_cls: 0.1620, s1.acc: 91.8345, s1.loss_bbox: 0.1241, s2.loss_cls: 0.0662, s2.acc: 93.5499, s2.loss_bbox: 0.0523, loss: 1.0521
+2021-10-10 05:34:48,614 - mmdet - INFO - Epoch [1][450/488]	lr: 9.082e-03, eta: 7:10:51, time: 1.850, data_time: 0.023, memory: 25185, loss_rpn_cls: 0.0661, loss_rpn_bbox: 0.0414, s0.loss_cls: 0.3592, s0.acc: 90.7373, s0.loss_bbox: 0.1587, s1.loss_cls: 0.1707, s1.acc: 91.0185, s1.loss_bbox: 0.1313, s2.loss_cls: 0.0730, s2.acc: 92.3192, s2.loss_bbox: 0.0610, loss: 1.0614
+2021-10-10 05:35:56,900 - mmdet - INFO - Saving checkpoint at 1 epochs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[>>>>>>>>>>>>>>>>>>>>>>>>>>>>>] 986/986, 9.2 task/s, elapsed: 107s, ETA:     0sLoading and preparing results...
+DONE (t=0.04s)
+creating index...
+index created!
+Running per image evaluation...
+Evaluate annotation type *bbox*
+2021-10-10 05:37:46,438 - mmdet - INFO - Evaluating bbox...
+DONE (t=3.83s).
+Accumulating evaluation results...
+DONE (t=0.99s).
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.051
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=1000 ] = 0.098
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=1000 ] = 0.048
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.002
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.004
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.063
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=300 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=1000 ] = 0.176
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=1000 ] = 0.002
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.023
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.223
+2021-10-10 05:37:51,615 - mmdet - INFO - Exp name: k-fold_1.py
+2021-10-10 05:37:51,617 - mmdet - INFO - Epoch(val) [1][986]	bbox_mAP: 0.0510, bbox_mAP_50: 0.0980, bbox_mAP_75: 0.0480, bbox_mAP_s: 0.0020, bbox_mAP_m: 0.0040, bbox_mAP_l: 0.0630, bbox_mAP_copypaste: 0.051 0.098 0.048 0.002 0.004 0.063
+2021-10-10 05:39:26,485 - mmdet - INFO - Epoch [2][50/488]	lr: 9.973e-03, eta: 6:39:34, time: 1.897, data_time: 0.074, memory: 25185, loss_rpn_cls: 0.0663, loss_rpn_bbox: 0.0409, s0.loss_cls: 0.3623, s0.acc: 90.6416, s0.loss_bbox: 0.1593, s1.loss_cls: 0.1690, s1.acc: 91.0364, s1.loss_bbox: 0.1277, s2.loss_cls: 0.0724, s2.acc: 92.3007, s2.loss_bbox: 0.0595, loss: 1.0573
+2021-10-10 05:40:56,108 - mmdet - INFO - Epoch [2][100/488]	lr: 9.973e-03, eta: 6:40:00, time: 1.792, data_time: 0.021, memory: 25185, loss_rpn_cls: 0.0577, loss_rpn_bbox: 0.0415, s0.loss_cls: 0.3504, s0.acc: 90.7144, s0.loss_bbox: 0.1506, s1.loss_cls: 0.1703, s1.acc: 90.7383, s1.loss_bbox: 0.1264, s2.loss_cls: 0.0747, s2.acc: 91.9466, s2.loss_bbox: 0.0602, loss: 1.0316
+Traceback (most recent call last):
+  File "./tools/train.py", line 192, in <module>
+    main()
+  File "./tools/train.py", line 188, in main
+    meta=meta)
+  File "/opt/ml/detection/mmdetection/mmdet/apis/train.py", line 170, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 51, in train
+    self.call_hook('after_train_iter')
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/base_runner.py", line 307, in call_hook
+    getattr(hook, fn_name)(self)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/hooks/optimizer.py", line 42, in after_train_iter
+    runner.optimizer.step()
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/autograd/grad_mode.py", line 26, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/optim/sgd.py", line 106, in step
+    buf.mul_(momentum).add_(d_p, alpha=1 - dampening)
+KeyboardInterrupt

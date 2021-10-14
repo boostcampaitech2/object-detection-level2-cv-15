@@ -38,9 +38,15 @@ def get_model(model_name):
     if model_name == 'fasterrcnn_resnet50_fpn':
         model_name = torchvision.models.detection.fasterrcnn_resnet50_fpn(pretrained=True)
     elif model_name == 'fasterrcnn_mobilenet_v3_large_fpn':
+<<<<<<< HEAD
         model_name = torchvision.models.detection.faster_rcnn.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
     elif model_name == 'mobilenet_v3_large_320_fpn':
         model_name = torchvision.models.detection.faster_rcnn.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
+=======
+        model_name = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
+    elif model_name == 'fasterrcnn_mobilenet_v3_large_320_fpn':
+        model_name = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
+>>>>>>> 6df8a73ec7c456a8ce69ec5e9a6a22b69bdb7545
     elif model_name == 'retinanet_resnet50_fpn':
         model_name = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)     
     elif model_name == 'ssd300_vgg16':
@@ -58,16 +64,4 @@ def get_box_model(model):
         model = FastRCNNPredictor
     else:
         model = None
-    # elif model == 'fasterrcnn_mobilenet_v3_large_fpn':
-    #     model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_fpn(pretrained=True)
-    # elif model == 'mobilenet_v3_large_320_fpn':
-    #     model = torchvision.models.detection.fasterrcnn_mobilenet_v3_large_320_fpn(pretrained=True)
-    # elif model == 'retinanet_resnet50_fpn':
-    #     model = torchvision.models.detection.retinanet_resnet50_fpn(pretrained=True)     
-    # elif model == 'ssd300_vgg16':
-    #     model = torchvision.models.detection.ssd300_vgg16(pretrained=True)     
-    # elif model == 'maskrcnn_resnet50_fpn':
-    #     model =torchvision.models.detection.maskrcnn_resnet50_fpn(pretrained=True)     
-    # elif model == 'keypointrcnn_resnet50_fpn':
-    #     model = torchvision.models.detection.keypointrcnn_resnet50_fpn(pretrained=True)   
     return model

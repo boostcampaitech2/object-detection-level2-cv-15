@@ -1,0 +1,79 @@
+2021-10-13 16:44:02,776 INFO    MainThread:120612 [internal.py:wandb_internal():89] W&B internal server running at pid: 120612, started at: 2021-10-13 16:44:02.776277
+2021-10-13 16:44:02,780 DEBUG   SenderThread:120612 [sender.py:send():185] send: header
+2021-10-13 16:44:02,780 INFO    WriterThread:120612 [datastore.py:open_for_write():77] open: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/run-3m4gqt2u.wandb
+2021-10-13 16:44:02,781 DEBUG   HandlerThread:120612 [handler.py:handle_request():126] handle_request: check_version
+2021-10-13 16:44:02,781 DEBUG   SenderThread:120612 [sender.py:send_request():199] send_request: check_version
+2021-10-13 16:44:02,822 DEBUG   SenderThread:120612 [sender.py:send():185] send: run
+2021-10-13 16:44:02,835 INFO    SenderThread:120612 [sender.py:_maybe_setup_resume():428] checking resume status for None/garbage_ObjectDetection/3m4gqt2u
+2021-10-13 16:44:03,357 INFO    SenderThread:120612 [dir_watcher.py:__init__():169] watching files in: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files
+2021-10-13 16:44:03,357 INFO    SenderThread:120612 [sender.py:_start_run_threads():749] run started: 3m4gqt2u with start time 1634143441
+2021-10-13 16:44:03,357 DEBUG   SenderThread:120612 [sender.py:send():185] send: summary
+2021-10-13 16:44:03,358 INFO    SenderThread:120612 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-13 16:44:03,358 DEBUG   HandlerThread:120612 [handler.py:handle_request():126] handle_request: run_start
+2021-10-13 16:44:03,362 DEBUG   HandlerThread:120612 [meta.py:__init__():40] meta init
+2021-10-13 16:44:03,362 DEBUG   HandlerThread:120612 [meta.py:__init__():54] meta init done
+2021-10-13 16:44:03,362 DEBUG   HandlerThread:120612 [meta.py:probe():211] probe
+2021-10-13 16:44:03,368 DEBUG   HandlerThread:120612 [meta.py:_setup_git():201] setup git
+2021-10-13 16:44:03,388 DEBUG   HandlerThread:120612 [meta.py:_setup_git():208] setup git done
+2021-10-13 16:44:03,388 DEBUG   HandlerThread:120612 [meta.py:_save_pip():58] save pip
+2021-10-13 16:44:03,389 DEBUG   HandlerThread:120612 [meta.py:_save_pip():72] save pip done
+2021-10-13 16:44:03,389 DEBUG   HandlerThread:120612 [meta.py:_save_conda():79] save conda
+2021-10-13 16:44:04,361 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/conda-environment.yaml
+2021-10-13 16:44:04,361 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/requirements.txt
+2021-10-13 16:44:04,362 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/wandb-summary.json
+2021-10-13 16:44:08,221 DEBUG   HandlerThread:120612 [meta.py:_save_conda():87] save conda done
+2021-10-13 16:44:08,222 DEBUG   HandlerThread:120612 [meta.py:probe():249] probe done
+2021-10-13 16:44:08,255 DEBUG   SenderThread:120612 [sender.py:send():185] send: files
+2021-10-13 16:44:08,255 INFO    SenderThread:120612 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-13 16:44:08,262 DEBUG   HandlerThread:120612 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 16:44:08,262 DEBUG   SenderThread:120612 [sender.py:send_request():199] send_request: stop_status
+2021-10-13 16:44:08,363 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/conda-environment.yaml
+2021-10-13 16:44:08,363 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/wandb-metadata.json
+2021-10-13 16:44:08,363 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:08,452 DEBUG   SenderThread:120612 [sender.py:send():185] send: config
+2021-10-13 16:44:08,811 INFO    Thread-11 :120612 [upload_job.py:push():137] Uploaded file /tmp/tmppn5h1spowandb/2930jxof-wandb-metadata.json
+2021-10-13 16:44:13,365 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:19,368 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:21,369 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:23,370 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:25,371 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:25,978 DEBUG   HandlerThread:120612 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 16:44:25,978 DEBUG   SenderThread:120612 [sender.py:send_request():199] send_request: stop_status
+2021-10-13 16:44:27,371 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:29,372 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:31,373 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:31,517 DEBUG   SenderThread:120612 [sender.py:send():185] send: stats
+2021-10-13 16:44:33,374 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/config.yaml
+2021-10-13 16:44:33,375 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:35,375 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:37,376 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:39,377 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:41,185 DEBUG   HandlerThread:120612 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-13 16:44:41,186 DEBUG   SenderThread:120612 [sender.py:send_request():199] send_request: stop_status
+2021-10-13 16:44:41,379 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:43,380 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:45,380 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:47,381 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:49,382 INFO    Thread-8  :120612 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:49,387 WARNING MainThread:120612 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-10-13 16:44:49,677 WARNING MainThread:120612 [internal.py:wandb_internal():145] Internal process interrupt: 2
+2021-10-13 16:44:49,678 ERROR   MainThread:120612 [internal.py:wandb_internal():148] Internal process interrupted.
+2021-10-13 16:44:50,109 INFO    HandlerThread:120612 [handler.py:finish():683] shutting down handler
+2021-10-13 16:44:50,109 INFO    SenderThread:120612 [sender.py:finish():986] shutting down sender
+2021-10-13 16:44:50,109 INFO    WriterThread:120612 [datastore.py:close():281] close: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/run-3m4gqt2u.wandb
+2021-10-13 16:44:50,109 INFO    SenderThread:120612 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-13 16:44:50,383 INFO    SenderThread:120612 [dir_watcher.py:finish():313] scan: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files
+2021-10-13 16:44:50,383 INFO    SenderThread:120612 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/wandb-metadata.json wandb-metadata.json
+2021-10-13 16:44:50,383 INFO    SenderThread:120612 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/wandb-summary.json wandb-summary.json
+2021-10-13 16:44:50,384 INFO    SenderThread:120612 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log output.log
+2021-10-13 16:44:50,384 INFO    SenderThread:120612 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/conda-environment.yaml conda-environment.yaml
+2021-10-13 16:44:50,384 INFO    SenderThread:120612 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/requirements.txt requirements.txt
+2021-10-13 16:44:50,384 INFO    SenderThread:120612 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/config.yaml config.yaml
+2021-10-13 16:44:50,388 INFO    SenderThread:120612 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-13 16:44:50,388 INFO    SenderThread:120612 [file_pusher.py:join():182] waiting for file pusher
+2021-10-13 16:44:50,969 INFO    Thread-12 :120612 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/wandb-summary.json
+2021-10-13 16:44:50,995 INFO    Thread-14 :120612 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/conda-environment.yaml
+2021-10-13 16:44:51,027 INFO    Thread-15 :120612 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/requirements.txt
+2021-10-13 16:44:51,029 INFO    Thread-16 :120612 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/config.yaml
+2021-10-13 16:44:51,045 INFO    Thread-13 :120612 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211013_164401-3m4gqt2u/files/output.log
+2021-10-13 16:44:51,583 INFO    MainThread:120612 [internal.py:handle_exit():76] Internal process exited
