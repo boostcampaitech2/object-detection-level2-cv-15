@@ -1,0 +1,753 @@
+2021-10-14 02:03:06,051 INFO    MainThread:2294 [internal.py:wandb_internal():86] W&B internal server running at pid: 2294, started at: 2021-10-14 02:03:06.051568
+2021-10-14 02:03:06,054 DEBUG   SenderThread:2294 [sender.py:send():185] send: header
+2021-10-14 02:03:06,054 INFO    WriterThread:2294 [datastore.py:open_for_write():77] open: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/run-182tseco.wandb
+2021-10-14 02:03:06,055 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: check_version
+2021-10-14 02:03:06,055 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: check_version
+2021-10-14 02:03:06,090 DEBUG   SenderThread:2294 [sender.py:send():185] send: run
+2021-10-14 02:03:06,101 INFO    SenderThread:2294 [sender.py:_maybe_setup_resume():427] checking resume status for None/garbage_ObjectDetection/182tseco
+2021-10-14 02:03:06,530 INFO    SenderThread:2294 [dir_watcher.py:__init__():169] watching files in: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files
+2021-10-14 02:03:06,530 INFO    SenderThread:2294 [sender.py:_start_run_threads():746] run started: 182tseco with start time 1634176985
+2021-10-14 02:03:06,533 DEBUG   SenderThread:2294 [sender.py:send():185] send: summary
+2021-10-14 02:03:06,533 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-14 02:03:06,534 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: run_start
+2021-10-14 02:03:06,538 DEBUG   HandlerThread:2294 [meta.py:__init__():40] meta init
+2021-10-14 02:03:06,538 DEBUG   HandlerThread:2294 [meta.py:__init__():54] meta init done
+2021-10-14 02:03:06,538 DEBUG   HandlerThread:2294 [meta.py:probe():211] probe
+2021-10-14 02:03:06,545 DEBUG   HandlerThread:2294 [meta.py:_setup_git():201] setup git
+2021-10-14 02:03:06,559 DEBUG   HandlerThread:2294 [meta.py:_setup_git():208] setup git done
+2021-10-14 02:03:06,559 DEBUG   HandlerThread:2294 [meta.py:_save_pip():58] save pip
+2021-10-14 02:03:06,559 DEBUG   HandlerThread:2294 [meta.py:_save_pip():72] save pip done
+2021-10-14 02:03:06,559 DEBUG   HandlerThread:2294 [meta.py:probe():249] probe done
+2021-10-14 02:03:06,596 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:03:06,596 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-14 02:03:06,601 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:03:06,601 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:03:06,794 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:03:07,533 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/requirements.txt
+2021-10-14 02:03:07,533 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-metadata.json
+2021-10-14 02:03:07,533 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:07,533 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-summary.json
+2021-10-14 02:03:08,384 INFO    Thread-11 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/50uxfylv-wandb-metadata.json
+2021-10-14 02:03:13,533 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:15,534 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:19,535 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:21,536 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:23,537 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:25,538 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:25,754 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:03:25,754 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:03:27,538 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:29,539 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:31,540 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:33,541 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:34,687 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:03:35,542 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:37,542 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/config.yaml
+2021-10-14 02:03:39,543 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:40,964 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:03:40,964 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:03:41,544 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:43,545 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:45,546 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:47,546 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:49,548 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:51,548 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:53,549 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:56,157 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:03:56,157 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:03:57,551 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:03:59,552 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:01,553 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:03,554 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:04,830 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:04:05,554 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:07,555 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:09,556 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:11,352 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:04:11,352 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:04:11,557 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:13,558 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:15,559 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:17,560 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:19,560 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:21,561 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:23,562 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:25,563 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:26,548 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:04:26,549 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:04:27,564 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:29,565 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:31,565 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:33,566 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:34,949 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:04:35,567 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:37,568 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:39,569 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:41,570 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:41,762 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:04:41,763 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:04:43,570 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:45,571 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:47,572 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:49,573 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:51,574 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:04:56,953 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:04:56,953 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:05:03,578 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:05,086 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:05:05,579 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:07,580 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:09,581 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:11,582 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:12,149 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:05:12,149 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:05:13,583 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:15,584 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:17,186 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,187 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Labels_0_0.jpg with policy now
+2021-10-14 02:05:17,187 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,188 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Labels_0_1.jpg with policy now
+2021-10-14 02:05:17,276 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,276 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Mosaics_0_0.jpg with policy now
+2021-10-14 02:05:17,277 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,277 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Mosaics_0_1.jpg with policy now
+2021-10-14 02:05:17,278 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,278 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Mosaics_0_2.jpg with policy now
+2021-10-14 02:05:17,473 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,474 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_0.png with policy now
+2021-10-14 02:05:17,475 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,475 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json with policy now
+2021-10-14 02:05:17,476 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,477 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,477 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_1.png with policy now
+2021-10-14 02:05:17,478 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,478 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json with policy now
+2021-10-14 02:05:17,479 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,479 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,479 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_2.png with policy now
+2021-10-14 02:05:17,480 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,480 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json with policy now
+2021-10-14 02:05:17,481 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,481 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,481 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_3.png with policy now
+2021-10-14 02:05:17,483 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,483 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json with policy now
+2021-10-14 02:05:17,484 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,489 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,489 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_4.png with policy now
+2021-10-14 02:05:17,492 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,492 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json with policy now
+2021-10-14 02:05:17,493 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,494 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,494 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_5.png with policy now
+2021-10-14 02:05:17,499 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,499 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json with policy now
+2021-10-14 02:05:17,501 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,501 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,501 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_6.png with policy now
+2021-10-14 02:05:17,502 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,504 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json with policy now
+2021-10-14 02:05:17,513 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,514 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,514 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_7.png with policy now
+2021-10-14 02:05:17,578 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,579 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json with policy now
+2021-10-14 02:05:17,580 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,581 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,581 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_8.png with policy now
+2021-10-14 02:05:17,604 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:17,604 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json
+2021-10-14 02:05:17,606 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_1.png
+2021-10-14 02:05:17,606 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json
+2021-10-14 02:05:17,606 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json
+2021-10-14 02:05:17,607 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Mosaics_0_0.jpg
+2021-10-14 02:05:17,607 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json
+2021-10-14 02:05:17,607 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_10.png
+2021-10-14 02:05:17,608 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_7.png
+2021-10-14 02:05:17,608 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_3.png
+2021-10-14 02:05:17,608 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json
+2021-10-14 02:05:17,609 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json
+2021-10-14 02:05:17,609 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json
+2021-10-14 02:05:17,609 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_0.png
+2021-10-14 02:05:17,609 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json
+2021-10-14 02:05:17,609 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json
+2021-10-14 02:05:17,610 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_11.png
+2021-10-14 02:05:17,610 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_14.png
+2021-10-14 02:05:17,611 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json
+2021-10-14 02:05:17,612 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,612 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json with policy now
+2021-10-14 02:05:17,612 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json
+2021-10-14 02:05:17,613 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json
+2021-10-14 02:05:17,613 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_12.png
+2021-10-14 02:05:17,614 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_13.png
+2021-10-14 02:05:17,615 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json
+2021-10-14 02:05:17,615 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Mosaics_0_2.jpg
+2021-10-14 02:05:17,615 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_2.png
+2021-10-14 02:05:17,616 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Mosaics_0_1.jpg
+2021-10-14 02:05:17,616 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_9.png
+2021-10-14 02:05:17,618 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_8.png
+2021-10-14 02:05:17,619 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_6.png
+2021-10-14 02:05:17,619 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_5.png
+2021-10-14 02:05:17,619 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json
+2021-10-14 02:05:17,620 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_4.png
+2021-10-14 02:05:17,620 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_15.png
+2021-10-14 02:05:17,621 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json
+2021-10-14 02:05:17,621 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Labels_0_0.jpg
+2021-10-14 02:05:17,621 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Labels_0_1.jpg
+2021-10-14 02:05:17,621 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json
+2021-10-14 02:05:17,621 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D
+2021-10-14 02:05:17,621 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger
+2021-10-14 02:05:17,627 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media
+2021-10-14 02:05:17,627 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata
+2021-10-14 02:05:17,627 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images
+2021-10-14 02:05:17,627 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger
+2021-10-14 02:05:17,627 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,632 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,632 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_9.png with policy now
+2021-10-14 02:05:17,661 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,662 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json with policy now
+2021-10-14 02:05:17,681 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,682 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,682 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_10.png with policy now
+2021-10-14 02:05:17,707 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,707 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json with policy now
+2021-10-14 02:05:17,710 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,711 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,711 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_11.png with policy now
+2021-10-14 02:05:17,717 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,717 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json with policy now
+2021-10-14 02:05:17,723 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,724 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,724 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_12.png with policy now
+2021-10-14 02:05:17,726 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,726 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json with policy now
+2021-10-14 02:05:17,731 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,732 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,732 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_13.png with policy now
+2021-10-14 02:05:17,738 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,738 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json with policy now
+2021-10-14 02:05:17,743 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,744 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,744 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_14.png with policy now
+2021-10-14 02:05:17,751 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,752 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json with policy now
+2021-10-14 02:05:17,777 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,778 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,780 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_0_15.png with policy now
+2021-10-14 02:05:17,813 INFO    Thread-13 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2bvivhax-media/images/Labels_0_1.jpg
+2021-10-14 02:05:17,824 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:05:17,829 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json with policy now
+2021-10-14 02:05:17,840 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:05:17,908 INFO    Thread-12 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/12x3rbgp-media/images/Labels_0_0.jpg
+2021-10-14 02:05:18,090 INFO    Thread-14 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2bvd5idf-media/images/Mosaics_0_0.jpg
+2021-10-14 02:05:18,179 INFO    Thread-18 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/vwy1qj0f-media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json
+2021-10-14 02:05:18,209 INFO    Thread-20 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3p7d7dou-media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json
+2021-10-14 02:05:18,225 INFO    Thread-15 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3ou1k24z-media/images/Mosaics_0_1.jpg
+2021-10-14 02:05:18,260 INFO    Thread-16 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2rmqxvkm-media/images/Mosaics_0_2.jpg
+2021-10-14 02:05:18,307 INFO    Thread-24 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3ng3ho19-media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json
+2021-10-14 02:05:18,310 INFO    Thread-22 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3bbosiqa-media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json
+2021-10-14 02:05:18,331 INFO    Thread-26 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/x6n4l8fk-media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json
+2021-10-14 02:05:18,370 INFO    Thread-30 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/24tg5tu8-media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json
+2021-10-14 02:05:18,390 INFO    Thread-32 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1himib0p-media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json
+2021-10-14 02:05:18,426 INFO    Thread-36 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2278hlpr-media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json
+2021-10-14 02:05:18,430 INFO    Thread-34 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/6mx29wkt-media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json
+2021-10-14 02:05:18,447 INFO    Thread-28 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3fncylzx-media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json
+2021-10-14 02:05:18,513 INFO    Thread-38 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3lbgbze1-media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json
+2021-10-14 02:05:18,637 INFO    Thread-40 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2rgpyex6-media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json
+2021-10-14 02:05:18,680 INFO    Thread-17 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1ueloevv-media/images/Bounding Box Debugger/Images_0_0.png
+2021-10-14 02:05:18,731 INFO    Thread-44 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/230qa6eo-media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json
+2021-10-14 02:05:18,737 INFO    Thread-42 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/23dcwa7z-media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json
+2021-10-14 02:05:18,754 INFO    Thread-23 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/32dfkn8t-media/images/Bounding Box Debugger/Images_0_3.png
+2021-10-14 02:05:18,779 INFO    Thread-46 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/20kwkc2g-media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json
+2021-10-14 02:05:18,781 INFO    Thread-29 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/231hxf09-media/images/Bounding Box Debugger/Images_0_6.png
+2021-10-14 02:05:18,811 INFO    Thread-48 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/22yronm0-media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json
+2021-10-14 02:05:18,820 INFO    Thread-21 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/srmflw54-media/images/Bounding Box Debugger/Images_0_2.png
+2021-10-14 02:05:18,916 INFO    Thread-31 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3vvnrt7m-media/images/Bounding Box Debugger/Images_0_7.png
+2021-10-14 02:05:18,919 INFO    Thread-33 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1p848agn-media/images/Bounding Box Debugger/Images_0_8.png
+2021-10-14 02:05:18,986 INFO    Thread-41 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/bxlwim6n-media/images/Bounding Box Debugger/Images_0_12.png
+2021-10-14 02:05:18,999 INFO    Thread-39 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/n7akabdf-media/images/Bounding Box Debugger/Images_0_11.png
+2021-10-14 02:05:19,012 INFO    Thread-45 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1ollwciu-media/images/Bounding Box Debugger/Images_0_14.png
+2021-10-14 02:05:19,101 INFO    Thread-43 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/231hvvim-media/images/Bounding Box Debugger/Images_0_13.png
+2021-10-14 02:05:19,138 DEBUG   SenderThread:2294 [sender.py:send():185] send: history
+2021-10-14 02:05:19,139 DEBUG   SenderThread:2294 [sender.py:send():185] send: summary
+2021-10-14 02:05:19,140 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-14 02:05:19,161 INFO    Thread-47 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/15cj203g-media/images/Bounding Box Debugger/Images_0_15.png
+2021-10-14 02:05:19,322 INFO    Thread-25 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3baycrac-media/images/Bounding Box Debugger/Images_0_4.png
+2021-10-14 02:05:19,508 INFO    Thread-19 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1b5dj1yn-media/images/Bounding Box Debugger/Images_0_1.png
+2021-10-14 02:05:19,524 INFO    Thread-35 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1mo1rbsv-media/images/Bounding Box Debugger/Images_0_9.png
+2021-10-14 02:05:19,568 INFO    Thread-37 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1tuyddu0-media/images/Bounding Box Debugger/Images_0_10.png
+2021-10-14 02:05:19,605 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:19,606 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-summary.json
+2021-10-14 02:05:19,617 INFO    Thread-27 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/348d1hcp-media/images/Bounding Box Debugger/Images_0_5.png
+2021-10-14 02:05:21,608 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:23,610 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:25,612 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:27,339 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:05:27,339 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:05:27,614 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:31,619 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:35,249 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:05:35,623 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:37,626 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:38,627 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/config.yaml
+2021-10-14 02:05:39,628 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:41,630 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:42,549 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:05:42,549 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:05:43,632 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:45,634 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:49,639 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:51,641 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:53,643 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:55,645 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:05:57,747 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:05:57,747 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:05:59,650 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:03,654 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:05,378 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:06:05,656 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:07,658 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:09,662 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:11,664 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:12,944 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:06:12,944 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:06:13,667 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:17,671 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:21,675 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:23,677 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:25,679 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:27,681 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:28,145 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:06:28,146 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:06:29,683 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:31,685 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:35,514 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:06:35,690 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:39,695 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:41,697 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:43,336 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:06:43,336 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:06:43,699 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:45,701 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:47,703 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:06:58,529 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:06:58,530 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:07:01,718 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:03,721 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:05,638 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:07:05,723 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:07,725 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:08,574 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,574 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_0.png with policy now
+2021-10-14 02:07:08,580 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,581 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json with policy now
+2021-10-14 02:07:08,584 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,586 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,586 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_1.png with policy now
+2021-10-14 02:07:08,588 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,589 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json with policy now
+2021-10-14 02:07:08,592 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,592 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,592 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_2.png with policy now
+2021-10-14 02:07:08,599 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,599 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json with policy now
+2021-10-14 02:07:08,600 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,600 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,600 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_3.png with policy now
+2021-10-14 02:07:08,601 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,601 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json with policy now
+2021-10-14 02:07:08,603 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,603 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,603 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_4.png with policy now
+2021-10-14 02:07:08,604 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,604 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json with policy now
+2021-10-14 02:07:08,605 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,606 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,606 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_5.png with policy now
+2021-10-14 02:07:08,607 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,607 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json with policy now
+2021-10-14 02:07:08,608 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,608 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,609 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_6.png with policy now
+2021-10-14 02:07:08,615 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,615 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json with policy now
+2021-10-14 02:07:08,624 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,624 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,624 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_7.png with policy now
+2021-10-14 02:07:08,626 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,626 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json with policy now
+2021-10-14 02:07:08,630 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,630 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,630 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_8.png with policy now
+2021-10-14 02:07:08,631 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,631 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json with policy now
+2021-10-14 02:07:08,636 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,636 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,637 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_9.png with policy now
+2021-10-14 02:07:08,638 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,638 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json with policy now
+2021-10-14 02:07:08,640 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,640 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,641 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_10.png with policy now
+2021-10-14 02:07:08,647 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,647 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json with policy now
+2021-10-14 02:07:08,678 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,679 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,679 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_11.png with policy now
+2021-10-14 02:07:08,685 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,685 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json with policy now
+2021-10-14 02:07:08,686 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,686 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,686 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_12.png with policy now
+2021-10-14 02:07:08,691 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,691 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json with policy now
+2021-10-14 02:07:08,696 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,696 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,696 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_13.png with policy now
+2021-10-14 02:07:08,701 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,701 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json with policy now
+2021-10-14 02:07:08,703 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,703 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,703 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_14.png with policy now
+2021-10-14 02:07:08,708 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,708 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json with policy now
+2021-10-14 02:07:08,709 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,709 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,710 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Bounding Box Debugger/Images_1_15.png with policy now
+2021-10-14 02:07:08,719 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:08,720 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json with policy now
+2021-10-14 02:07:08,727 DEBUG   SenderThread:2294 [sender.py:send():185] send: config
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_7.png
+2021-10-14 02:07:08,734 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_15.png
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_3.png
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_6.png
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_11.png
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_12.png
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_8.png
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json
+2021-10-14 02:07:08,735 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_0.png
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_9.png
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_5.png
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_4.png
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_14.png
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_2.png
+2021-10-14 02:07:08,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json
+2021-10-14 02:07:08,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_1.png
+2021-10-14 02:07:08,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json
+2021-10-14 02:07:08,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_10.png
+2021-10-14 02:07:08,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json
+2021-10-14 02:07:08,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_13.png
+2021-10-14 02:07:08,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger
+2021-10-14 02:07:08,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger
+2021-10-14 02:07:09,284 INFO    Thread-52 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3t0vs126-media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json
+2021-10-14 02:07:09,378 INFO    Thread-54 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/h353tfcc-media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json
+2021-10-14 02:07:09,479 INFO    Thread-50 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1ir9dxjp-media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json
+2021-10-14 02:07:09,498 INFO    Thread-62 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/gfho22zp-media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json
+2021-10-14 02:07:09,539 INFO    Thread-70 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2wmzirgu-media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json
+2021-10-14 02:07:09,549 INFO    Thread-60 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/klsd5y48-media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json
+2021-10-14 02:07:09,574 INFO    Thread-56 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2p6v0umj-media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json
+2021-10-14 02:07:09,600 INFO    Thread-66 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/24hmgcrv-media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json
+2021-10-14 02:07:09,603 INFO    Thread-64 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/25hh4rux-media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json
+2021-10-14 02:07:09,606 INFO    Thread-68 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2qgjjhmd-media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json
+2021-10-14 02:07:09,612 INFO    Thread-76 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3swgld8p-media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json
+2021-10-14 02:07:09,628 INFO    Thread-58 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2pq0bxxt-media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json
+2021-10-14 02:07:09,635 INFO    Thread-74 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3dnb59ft-media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json
+2021-10-14 02:07:09,733 INFO    Thread-78 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1nx05dr5-media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json
+2021-10-14 02:07:09,736 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:09,762 INFO    Thread-49 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3nypdhjp-media/images/Bounding Box Debugger/Images_1_0.png
+2021-10-14 02:07:09,787 INFO    Thread-80 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1qmzj0y7-media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json
+2021-10-14 02:07:09,792 INFO    Thread-72 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/29bk0i5m-media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json
+2021-10-14 02:07:09,868 DEBUG   SenderThread:2294 [sender.py:send():185] send: history
+2021-10-14 02:07:09,869 DEBUG   SenderThread:2294 [sender.py:send():185] send: summary
+2021-10-14 02:07:09,869 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-14 02:07:09,893 INFO    Thread-53 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1phyg1nc-media/images/Bounding Box Debugger/Images_1_2.png
+2021-10-14 02:07:09,905 INFO    Thread-73 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3i8bn6sq-media/images/Bounding Box Debugger/Images_1_12.png
+2021-10-14 02:07:09,907 INFO    Thread-55 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/4tx1zb18-media/images/Bounding Box Debugger/Images_1_3.png
+2021-10-14 02:07:09,976 INFO    Thread-65 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1wfqsv86-media/images/Bounding Box Debugger/Images_1_8.png
+2021-10-14 02:07:09,978 INFO    Thread-77 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1o3osqnd-media/images/Bounding Box Debugger/Images_1_14.png
+2021-10-14 02:07:09,997 INFO    Thread-61 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3t37o6r4-media/images/Bounding Box Debugger/Images_1_6.png
+2021-10-14 02:07:10,041 INFO    Thread-71 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/lmiqd5nm-media/images/Bounding Box Debugger/Images_1_11.png
+2021-10-14 02:07:10,067 INFO    Thread-75 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1j5j9ms1-media/images/Bounding Box Debugger/Images_1_13.png
+2021-10-14 02:07:10,122 INFO    Thread-63 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/z8zf813y-media/images/Bounding Box Debugger/Images_1_7.png
+2021-10-14 02:07:10,210 INFO    Thread-79 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1xvmhgu2-media/images/Bounding Box Debugger/Images_1_15.png
+2021-10-14 02:07:10,619 INFO    Thread-57 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1ukivxbq-media/images/Bounding Box Debugger/Images_1_4.png
+2021-10-14 02:07:10,645 INFO    Thread-67 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/ik6gs16v-media/images/Bounding Box Debugger/Images_1_9.png
+2021-10-14 02:07:10,650 INFO    Thread-69 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3s226f82-media/images/Bounding Box Debugger/Images_1_10.png
+2021-10-14 02:07:10,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/config.yaml
+2021-10-14 02:07:10,737 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-summary.json
+2021-10-14 02:07:10,804 INFO    Thread-59 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3od0hs9k-media/images/Bounding Box Debugger/Images_1_5.png
+2021-10-14 02:07:10,911 INFO    Thread-51 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/wbxysgm6-media/images/Bounding Box Debugger/Images_1_1.png
+2021-10-14 02:07:11,739 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:13,742 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:13,749 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:07:13,749 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:07:25,760 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:28,765 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:28,941 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:07:28,941 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:07:32,772 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:34,775 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:35,781 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:07:36,780 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:38,783 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:41,787 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:44,132 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-14 02:07:44,133 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: stop_status
+2021-10-14 02:07:46,835 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: log_artifact
+2021-10-14 02:07:46,835 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: log_artifact
+2021-10-14 02:07:47,796 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_1.jpg
+2021-10-14 02:07:47,797 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_5.jpg
+2021-10-14 02:07:47,798 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_3.jpg
+2021-10-14 02:07:47,799 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_1.png
+2021-10-14 02:07:47,799 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_4.jpg
+2021-10-14 02:07:47,800 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_0.jpg
+2021-10-14 02:07:47,801 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_2.png
+2021-10-14 02:07:47,802 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_3.png
+2021-10-14 02:07:47,803 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_4.png
+2021-10-14 02:07:47,804 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_2.jpg
+2021-10-14 02:07:47,805 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_5.png
+2021-10-14 02:07:47,806 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_0.png
+2021-10-14 02:07:47,806 INFO    Thread-8  :2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images
+2021-10-14 02:07:49,542 INFO    Thread-82 :2294 [upload_job.py:push():95] Uploaded file /opt/ml/.cache/wandb/artifacts/obj/md5/36/7545072897352d74ebfd88470d2019
+2021-10-14 02:07:50,062 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:50,417 INFO    SenderThread:2294 [sender.py:send_request_log_artifact():907] logged artifact run_182tseco_model - {'id': 'QXJ0aWZhY3Q6MzA1OTExMzc=', 'digest': '42c47d3551e82434a489e385ed988e16', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjUwNjIxODY=', 'latestArtifact': None}, 'version': 'latest'}
+2021-10-14 02:07:50,417 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,418 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Validation_2_0.jpg with policy now
+2021-10-14 02:07:50,419 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,419 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Validation_2_1.jpg with policy now
+2021-10-14 02:07:50,421 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,421 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Validation_2_2.jpg with policy now
+2021-10-14 02:07:50,422 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,422 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Validation_2_3.jpg with policy now
+2021-10-14 02:07:50,424 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,424 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Validation_2_4.jpg with policy now
+2021-10-14 02:07:50,426 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,426 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Validation_2_5.jpg with policy now
+2021-10-14 02:07:50,427 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,427 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Results_2_0.png with policy now
+2021-10-14 02:07:50,429 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,429 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Results_2_1.png with policy now
+2021-10-14 02:07:50,434 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,434 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Results_2_2.png with policy now
+2021-10-14 02:07:50,436 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,436 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Results_2_3.png with policy now
+2021-10-14 02:07:50,437 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,437 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Results_2_4.png with policy now
+2021-10-14 02:07:50,440 DEBUG   SenderThread:2294 [sender.py:send():185] send: files
+2021-10-14 02:07:50,440 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file media/images/Results_2_5.png with policy now
+2021-10-14 02:07:50,445 DEBUG   SenderThread:2294 [sender.py:send():185] send: history
+2021-10-14 02:07:50,445 DEBUG   SenderThread:2294 [sender.py:send():185] send: summary
+2021-10-14 02:07:50,446 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-14 02:07:50,446 DEBUG   SenderThread:2294 [sender.py:send():185] send: telemetry
+2021-10-14 02:07:50,446 DEBUG   SenderThread:2294 [sender.py:send():185] send: exit
+2021-10-14 02:07:50,446 INFO    SenderThread:2294 [sender.py:send_exit():294] handling exit code: 0
+2021-10-14 02:07:50,446 INFO    SenderThread:2294 [sender.py:send_exit():296] handling runtime: 283
+2021-10-14 02:07:50,456 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-14 02:07:50,456 INFO    SenderThread:2294 [sender.py:send_exit():306] send defer
+2021-10-14 02:07:50,456 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:50,462 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:50,462 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 0
+2021-10-14 02:07:50,462 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:50,462 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 0
+2021-10-14 02:07:50,462 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 1
+2021-10-14 02:07:50,463 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:50,463 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 1
+2021-10-14 02:07:50,545 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:50,545 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 1
+2021-10-14 02:07:50,545 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 2
+2021-10-14 02:07:50,545 DEBUG   SenderThread:2294 [sender.py:send():185] send: stats
+2021-10-14 02:07:50,546 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:50,546 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 2
+2021-10-14 02:07:50,546 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:50,546 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 2
+2021-10-14 02:07:50,546 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 3
+2021-10-14 02:07:50,546 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:50,546 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 3
+2021-10-14 02:07:50,547 DEBUG   SenderThread:2294 [sender.py:send():185] send: summary
+2021-10-14 02:07:50,547 INFO    SenderThread:2294 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-14 02:07:50,547 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:50,547 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 3
+2021-10-14 02:07:50,548 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 4
+2021-10-14 02:07:50,548 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:50,548 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 4
+2021-10-14 02:07:50,548 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:50,548 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 4
+2021-10-14 02:07:50,563 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:50,785 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 5
+2021-10-14 02:07:50,786 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:50,787 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:50,788 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 5
+2021-10-14 02:07:50,789 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:50,789 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 5
+2021-10-14 02:07:50,789 INFO    SenderThread:2294 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-14 02:07:50,833 INFO    SenderThread:2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/config.yaml
+2021-10-14 02:07:50,833 INFO    SenderThread:2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:50,833 INFO    SenderThread:2294 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-summary.json
+2021-10-14 02:07:50,834 INFO    SenderThread:2294 [dir_watcher.py:finish():313] scan: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files
+2021-10-14 02:07:50,834 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-metadata.json wandb-metadata.json
+2021-10-14 02:07:50,834 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-summary.json wandb-summary.json
+2021-10-14 02:07:50,834 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log output.log
+2021-10-14 02:07:50,840 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/requirements.txt requirements.txt
+2021-10-14 02:07:50,841 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/config.yaml config.yaml
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_90.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_80.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_50.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_00.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_90.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_100.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_140.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_30.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_60.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_150.boxes2D.json
+2021-10-14 02:07:50,871 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_150.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_10.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_140.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_130.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_120.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_120.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_40.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_70.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_110.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_20.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_20.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_50.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_00.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_40.boxes2D.json
+2021-10-14 02:07:50,872 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_30.boxes2D.json
+2021-10-14 02:07:50,873 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_70.boxes2D.json
+2021-10-14 02:07:50,873 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_10.boxes2D.json
+2021-10-14 02:07:50,873 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_100.boxes2D.json
+2021-10-14 02:07:50,873 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_130.boxes2D.json
+2021-10-14 02:07:50,873 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_1_80.boxes2D.json
+2021-10-14 02:07:50,873 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_110.boxes2D.json
+2021-10-14 02:07:50,873 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json media/metadata/boxes2D/Bounding Box Debugger/Images_0_60.boxes2D.json
+2021-10-14 02:07:50,875 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_4.jpg media/images/Validation_2_4.jpg
+2021-10-14 02:07:50,875 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Labels_0_0.jpg media/images/Labels_0_0.jpg
+2021-10-14 02:07:50,875 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_4.png media/images/Results_2_4.png
+2021-10-14 02:07:50,875 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Mosaics_0_2.jpg media/images/Mosaics_0_2.jpg
+2021-10-14 02:07:50,875 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_5.jpg media/images/Validation_2_5.jpg
+2021-10-14 02:07:50,875 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_0.jpg media/images/Validation_2_0.jpg
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_3.png media/images/Results_2_3.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Labels_0_1.jpg media/images/Labels_0_1.jpg
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_2.png media/images/Results_2_2.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Mosaics_0_1.jpg media/images/Mosaics_0_1.jpg
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_5.png media/images/Results_2_5.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_1.jpg media/images/Validation_2_1.jpg
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Mosaics_0_0.jpg media/images/Mosaics_0_0.jpg
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_0.png media/images/Results_2_0.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Results_2_1.png media/images/Results_2_1.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_2.jpg media/images/Validation_2_2.jpg
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Validation_2_3.jpg media/images/Validation_2_3.jpg
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_7.png media/images/Bounding Box Debugger/Images_0_7.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_15.png media/images/Bounding Box Debugger/Images_0_15.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_10.png media/images/Bounding Box Debugger/Images_0_10.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_14.png media/images/Bounding Box Debugger/Images_1_14.png
+2021-10-14 02:07:50,876 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_11.png media/images/Bounding Box Debugger/Images_0_11.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_11.png media/images/Bounding Box Debugger/Images_1_11.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_1.png media/images/Bounding Box Debugger/Images_0_1.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_13.png media/images/Bounding Box Debugger/Images_1_13.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_14.png media/images/Bounding Box Debugger/Images_0_14.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_12.png media/images/Bounding Box Debugger/Images_1_12.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_3.png media/images/Bounding Box Debugger/Images_1_3.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_6.png media/images/Bounding Box Debugger/Images_1_6.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_5.png media/images/Bounding Box Debugger/Images_0_5.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_4.png media/images/Bounding Box Debugger/Images_0_4.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_8.png media/images/Bounding Box Debugger/Images_0_8.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_15.png media/images/Bounding Box Debugger/Images_1_15.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_5.png media/images/Bounding Box Debugger/Images_1_5.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_0.png media/images/Bounding Box Debugger/Images_0_0.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_9.png media/images/Bounding Box Debugger/Images_0_9.png
+2021-10-14 02:07:50,877 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_6.png media/images/Bounding Box Debugger/Images_0_6.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_4.png media/images/Bounding Box Debugger/Images_1_4.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_13.png media/images/Bounding Box Debugger/Images_0_13.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_0.png media/images/Bounding Box Debugger/Images_1_0.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_10.png media/images/Bounding Box Debugger/Images_1_10.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_2.png media/images/Bounding Box Debugger/Images_1_2.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_9.png media/images/Bounding Box Debugger/Images_1_9.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_8.png media/images/Bounding Box Debugger/Images_1_8.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_2.png media/images/Bounding Box Debugger/Images_0_2.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_7.png media/images/Bounding Box Debugger/Images_1_7.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_12.png media/images/Bounding Box Debugger/Images_0_12.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_1_1.png media/images/Bounding Box Debugger/Images_1_1.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/media/images/Bounding Box Debugger/Images_0_3.png media/images/Bounding Box Debugger/Images_0_3.png
+2021-10-14 02:07:50,878 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 6
+2021-10-14 02:07:50,879 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:50,880 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 6
+2021-10-14 02:07:50,880 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:50,880 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 6
+2021-10-14 02:07:50,880 INFO    SenderThread:2294 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-14 02:07:50,888 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:50,889 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:50,991 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:50,991 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:51,093 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:51,094 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:51,122 INFO    Thread-91 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/12s7upgi-media/images/Results_2_2.png
+2021-10-14 02:07:51,149 INFO    Thread-90 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/t5e3ekoa-media/images/Results_2_1.png
+2021-10-14 02:07:51,181 INFO    Thread-89 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1fk9vayt-media/images/Results_2_0.png
+2021-10-14 02:07:51,196 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:51,197 INFO    Thread-92 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1x01noyj-media/images/Results_2_3.png
+2021-10-14 02:07:51,198 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:51,230 INFO    Thread-88 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1xn3n4r9-media/images/Validation_2_5.jpg
+2021-10-14 02:07:51,279 INFO    Thread-87 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/qcioo0dw-media/images/Validation_2_4.jpg
+2021-10-14 02:07:51,300 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:51,300 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:51,320 INFO    Thread-84 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/1akbzb3k-media/images/Validation_2_1.jpg
+2021-10-14 02:07:51,323 INFO    Thread-83 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/2ie9r1np-media/images/Validation_2_0.jpg
+2021-10-14 02:07:51,369 INFO    Thread-86 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/27erl15u-media/images/Validation_2_3.jpg
+2021-10-14 02:07:51,382 INFO    Thread-93 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/j86qnv10-media/images/Results_2_4.png
+2021-10-14 02:07:51,398 INFO    Thread-96 :2294 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/output.log
+2021-10-14 02:07:51,400 INFO    Thread-94 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/elzt8894-media/images/Results_2_5.png
+2021-10-14 02:07:51,401 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:51,402 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:51,407 INFO    Thread-97 :2294 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/requirements.txt
+2021-10-14 02:07:51,411 INFO    Thread-95 :2294 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/wandb-summary.json
+2021-10-14 02:07:51,429 INFO    Thread-85 :2294 [upload_job.py:push():137] Uploaded file /tmp/tmpdu1_x6alwandb/3onexmix-media/images/Validation_2_2.jpg
+2021-10-14 02:07:51,447 INFO    Thread-98 :2294 [upload_job.py:push():137] Uploaded file /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/files/config.yaml
+2021-10-14 02:07:51,504 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:51,504 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:51,607 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:51,607 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:51,648 INFO    Thread-7  :2294 [sender.py:transition_state():319] send defer: 7
+2021-10-14 02:07:51,650 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:51,650 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 7
+2021-10-14 02:07:51,650 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:51,650 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 7
+2021-10-14 02:07:51,709 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:52,168 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 8
+2021-10-14 02:07:52,168 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:52,169 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:52,169 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 8
+2021-10-14 02:07:52,169 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:52,170 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 8
+2021-10-14 02:07:52,170 INFO    SenderThread:2294 [sender.py:transition_state():319] send defer: 9
+2021-10-14 02:07:52,170 DEBUG   SenderThread:2294 [sender.py:send():185] send: final
+2021-10-14 02:07:52,171 DEBUG   SenderThread:2294 [sender.py:send():185] send: footer
+2021-10-14 02:07:52,171 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: defer
+2021-10-14 02:07:52,171 INFO    HandlerThread:2294 [handler.py:handle_request_defer():143] handle defer: 9
+2021-10-14 02:07:52,171 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: defer
+2021-10-14 02:07:52,171 INFO    SenderThread:2294 [sender.py:send_request_defer():315] handle sender defer: 9
+2021-10-14 02:07:52,271 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: poll_exit
+2021-10-14 02:07:52,271 DEBUG   SenderThread:2294 [sender.py:send_request():199] send_request: poll_exit
+2021-10-14 02:07:52,271 INFO    SenderThread:2294 [file_pusher.py:join():182] waiting for file pusher
+2021-10-14 02:07:52,461 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: get_summary
+2021-10-14 02:07:52,462 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: sampled_history
+2021-10-14 02:07:52,463 DEBUG   HandlerThread:2294 [handler.py:handle_request():126] handle_request: shutdown
+2021-10-14 02:07:52,463 INFO    HandlerThread:2294 [handler.py:finish():683] shutting down handler
+2021-10-14 02:07:53,170 INFO    WriterThread:2294 [datastore.py:close():281] close: /opt/ml/detection/yolov5/wandb/run-20211014_020305-182tseco/run-182tseco.wandb
+2021-10-14 02:07:53,459 INFO    SenderThread:2294 [sender.py:finish():986] shutting down sender
+2021-10-14 02:07:53,460 INFO    SenderThread:2294 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-14 02:07:53,460 INFO    SenderThread:2294 [file_pusher.py:join():182] waiting for file pusher
+2021-10-14 02:07:53,461 INFO    MainThread:2294 [internal.py:handle_exit():76] Internal process exited
