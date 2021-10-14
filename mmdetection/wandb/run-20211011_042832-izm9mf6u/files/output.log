@@ -1,0 +1,52 @@
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:323: UserWarning: ``grid_anchors`` would be deprecated soon. Please use ``grid_priors``
+  warnings.warn('``grid_anchors`` would be deprecated soon. '
+/opt/ml/detection/mmdetection/mmdet/core/anchor/anchor_generator.py:360: UserWarning: ``single_level_grid_anchors`` would be deprecated soon. Please use ``single_level_grid_priors``
+  '``single_level_grid_anchors`` would be deprecated soon. '
+Traceback (most recent call last):
+  File "./tools/train.py", line 192, in <module>
+    main()
+  File "./tools/train.py", line 188, in main
+    meta=meta)
+  File "/opt/ml/detection/mmdetection/mmdet/apis/train.py", line 170, in train_detector
+    runner.run(data_loaders, cfg.workflow)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 127, in run
+    epoch_runner(data_loaders[i], **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 50, in train
+    self.run_iter(data_batch, train_mode=True, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/epoch_based_runner.py", line 30, in run_iter
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/parallel/data_parallel.py", line 67, in train_step
+    return self.module.train_step(*inputs[0], **kwargs[0])
+  File "/opt/ml/detection/mmdetection/mmdet/models/detectors/base.py", line 237, in train_step
+    losses = self(**data)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 98, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/detectors/base.py", line 171, in forward
+    return self.forward_train(img, img_metas, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/detectors/two_stage.py", line 140, in forward_train
+    proposal_cfg=proposal_cfg)
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/base_dense_head.py", line 54, in forward_train
+    losses = self.loss(*loss_inputs, gt_bboxes_ignore=gt_bboxes_ignore)
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/rpn_head.py", line 74, in loss
+    gt_bboxes_ignore=gt_bboxes_ignore)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/runner/fp16_utils.py", line 186, in new_func
+    return old_func(*args, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/anchor_head.py", line 489, in loss
+    num_total_samples=num_total_samples)
+  File "/opt/ml/detection/mmdetection/mmdet/core/utils/misc.py", line 29, in multi_apply
+    return tuple(map(list, zip(*map_results)))
+  File "/opt/ml/detection/mmdetection/mmdet/models/dense_heads/anchor_head.py", line 419, in loss_single
+    avg_factor=num_total_samples)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/losses/smooth_l1_loss.py", line 96, in forward
+    **kwargs)
+  File "/opt/conda/envs/detection/lib/python3.7/site-packages/mmcv/utils/parrots_jit.py", line 22, in wrapper_inner
+    return func(*args, **kargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/losses/utils.py", line 96, in wrapper
+    loss = loss_func(pred, target, **kwargs)
+  File "/opt/ml/detection/mmdetection/mmdet/models/losses/smooth_l1_loss.py", line 25, in smooth_l1_loss
+    diff = torch.abs(pred - target)
+RuntimeError: CUDA out of memory. Tried to allocate 120.00 MiB (GPU 0; 31.75 GiB total capacity; 30.38 GiB already allocated; 96.75 MiB free; 30.51 GiB reserved in total by PyTorch)

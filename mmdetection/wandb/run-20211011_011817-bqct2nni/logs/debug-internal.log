@@ -1,0 +1,60 @@
+2021-10-11 01:18:18,165 INFO    MainThread:75573 [internal.py:wandb_internal():89] W&B internal server running at pid: 75573, started at: 2021-10-11 01:18:18.165257
+2021-10-11 01:18:18,168 DEBUG   SenderThread:75573 [sender.py:send():185] send: header
+2021-10-11 01:18:18,168 INFO    WriterThread:75573 [datastore.py:open_for_write():77] open: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/run-bqct2nni.wandb
+2021-10-11 01:18:18,168 DEBUG   HandlerThread:75573 [handler.py:handle_request():126] handle_request: check_version
+2021-10-11 01:18:18,168 DEBUG   SenderThread:75573 [sender.py:send_request():199] send_request: check_version
+2021-10-11 01:18:18,201 DEBUG   SenderThread:75573 [sender.py:send():185] send: run
+2021-10-11 01:18:18,430 INFO    SenderThread:75573 [dir_watcher.py:__init__():169] watching files in: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files
+2021-10-11 01:18:18,430 INFO    SenderThread:75573 [sender.py:_start_run_threads():749] run started: bqct2nni with start time 1633915097
+2021-10-11 01:18:18,430 DEBUG   SenderThread:75573 [sender.py:send():185] send: summary
+2021-10-11 01:18:18,430 INFO    SenderThread:75573 [sender.py:_save_file():879] saving file wandb-summary.json with policy end
+2021-10-11 01:18:18,431 DEBUG   HandlerThread:75573 [handler.py:handle_request():126] handle_request: run_start
+2021-10-11 01:18:18,434 DEBUG   HandlerThread:75573 [meta.py:__init__():40] meta init
+2021-10-11 01:18:18,434 DEBUG   HandlerThread:75573 [meta.py:__init__():54] meta init done
+2021-10-11 01:18:18,434 DEBUG   HandlerThread:75573 [meta.py:probe():211] probe
+2021-10-11 01:18:18,441 DEBUG   HandlerThread:75573 [meta.py:_setup_git():201] setup git
+2021-10-11 01:18:18,458 DEBUG   HandlerThread:75573 [meta.py:_setup_git():208] setup git done
+2021-10-11 01:18:18,458 DEBUG   HandlerThread:75573 [meta.py:_save_pip():58] save pip
+2021-10-11 01:18:18,459 DEBUG   HandlerThread:75573 [meta.py:_save_pip():72] save pip done
+2021-10-11 01:18:18,459 DEBUG   HandlerThread:75573 [meta.py:_save_conda():79] save conda
+2021-10-11 01:18:19,432 INFO    Thread-8  :75573 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/requirements.txt
+2021-10-11 01:18:19,432 INFO    Thread-8  :75573 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/conda-environment.yaml
+2021-10-11 01:18:19,433 INFO    Thread-8  :75573 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/wandb-summary.json
+2021-10-11 01:18:21,095 DEBUG   HandlerThread:75573 [meta.py:_save_conda():87] save conda done
+2021-10-11 01:18:21,096 DEBUG   HandlerThread:75573 [meta.py:probe():249] probe done
+2021-10-11 01:18:21,127 DEBUG   SenderThread:75573 [sender.py:send():185] send: files
+2021-10-11 01:18:21,127 INFO    SenderThread:75573 [sender.py:_save_file():879] saving file wandb-metadata.json with policy now
+2021-10-11 01:18:21,133 DEBUG   HandlerThread:75573 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 01:18:21,133 DEBUG   SenderThread:75573 [sender.py:send_request():199] send_request: stop_status
+2021-10-11 01:18:21,431 INFO    Thread-8  :75573 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/wandb-metadata.json
+2021-10-11 01:18:21,431 INFO    Thread-8  :75573 [dir_watcher.py:_on_file_created():217] file/dir created: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/output.log
+2021-10-11 01:18:21,693 INFO    Thread-11 :75573 [upload_job.py:push():137] Uploaded file /tmp/tmp16c6le5ywandb/1i2nzkb7-wandb-metadata.json
+2021-10-11 01:18:25,432 INFO    Thread-8  :75573 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/output.log
+2021-10-11 01:18:27,433 INFO    Thread-8  :75573 [dir_watcher.py:_on_file_modified():230] file/dir modified: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/output.log
+2021-10-11 01:18:36,324 DEBUG   HandlerThread:75573 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 01:18:36,324 DEBUG   SenderThread:75573 [sender.py:send_request():199] send_request: stop_status
+2021-10-11 01:18:46,559 DEBUG   SenderThread:75573 [sender.py:send():185] send: stats
+2021-10-11 01:18:51,507 DEBUG   HandlerThread:75573 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 01:18:51,507 DEBUG   SenderThread:75573 [sender.py:send_request():199] send_request: stop_status
+2021-10-11 01:19:06,698 DEBUG   HandlerThread:75573 [handler.py:handle_request():126] handle_request: stop_status
+2021-10-11 01:19:06,698 DEBUG   SenderThread:75573 [sender.py:send_request():199] send_request: stop_status
+2021-10-11 01:19:10,834 WARNING MainThread:75573 [internal.py:wandb_internal():145] Internal process interrupt: 1
+2021-10-11 01:19:11,008 WARNING MainThread:75573 [internal.py:wandb_internal():145] Internal process interrupt: 2
+2021-10-11 01:19:11,009 ERROR   MainThread:75573 [internal.py:wandb_internal():148] Internal process interrupted.
+2021-10-11 01:19:11,563 INFO    WriterThread:75573 [datastore.py:close():281] close: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/run-bqct2nni.wandb
+2021-10-11 01:19:11,889 INFO    SenderThread:75573 [sender.py:finish():986] shutting down sender
+2021-10-11 01:19:11,889 INFO    SenderThread:75573 [dir_watcher.py:finish():283] shutting down directory watcher
+2021-10-11 01:19:12,442 INFO    SenderThread:75573 [dir_watcher.py:finish():313] scan: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files
+2021-10-11 01:19:12,442 INFO    SenderThread:75573 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/wandb-metadata.json wandb-metadata.json
+2021-10-11 01:19:12,443 INFO    SenderThread:75573 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/wandb-summary.json wandb-summary.json
+2021-10-11 01:19:12,443 INFO    SenderThread:75573 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/output.log output.log
+2021-10-11 01:19:12,443 INFO    SenderThread:75573 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/conda-environment.yaml conda-environment.yaml
+2021-10-11 01:19:12,444 INFO    SenderThread:75573 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/requirements.txt requirements.txt
+2021-10-11 01:19:12,444 INFO    SenderThread:75573 [dir_watcher.py:finish():327] scan save: /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/config.yaml config.yaml
+2021-10-11 01:19:12,450 INFO    SenderThread:75573 [file_pusher.py:finish():177] shutting down file pusher
+2021-10-11 01:19:12,450 INFO    SenderThread:75573 [file_pusher.py:join():182] waiting for file pusher
+2021-10-11 01:19:13,048 INFO    Thread-15 :75573 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/config.yaml
+2021-10-11 01:19:13,056 INFO    Thread-14 :75573 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/requirements.txt
+2021-10-11 01:19:13,058 INFO    Thread-12 :75573 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/wandb-summary.json
+2021-10-11 01:19:13,103 INFO    Thread-13 :75573 [upload_job.py:push():137] Uploaded file /opt/ml/detection/mmdetection/wandb/run-20211011_011817-bqct2nni/files/output.log
+2021-10-11 01:19:13,653 INFO    MainThread:75573 [internal.py:handle_exit():76] Internal process exited
