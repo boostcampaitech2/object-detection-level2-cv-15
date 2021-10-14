@@ -1,12 +1,12 @@
 {
     "training" : {
-        "id" : 4,
+        "id" : 9,
         "fold_num" : 5
     },
 
     "wandb" : {
         "wandb_project_name" : "garbage_Detection",
-        "wandb_group_name" : "garbage_detection_scorethre_0.1_t",
+        "wandb_group_name" : "fasterrcnn_mobilenet_v3_large_320_fpn_scorethre_0.2_no_pseudo",
         "wandb_entity" : "hyunsoo"
     },
 
@@ -116,6 +116,34 @@
         "scheduler": "CosineAnnealingLR",
         "early_stop": 5,
         "score_threshold" : 0.05
+    },
+    {
+        "id" : 8,
+        "model_name" : "retinanet_resnet50_fpn",
+        "box_model_name" : "None",
+        "num_epochs" : 13,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 7,
+        "score_threshold" : 0.3
+    },
+    {
+        "id" : 9,
+        "model_name" : "fasterrcnn_mobilenet_v3_large_320_fpn",
+        "box_model_name" : "FastRCNNPredictor",
+        "num_epochs" : 13,
+        "batch_size" : 16,
+        "lr" : 0.01,
+        "num_workers" : 1,
+        "num_classes" : 11,
+        "optimizer": "SGD",
+        "scheduler": "CosineAnnealingLR",
+        "early_stop": 6,
+        "score_threshold" : 0.2
     }
     ]
     

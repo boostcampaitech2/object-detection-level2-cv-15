@@ -16,15 +16,17 @@ from torch.utils.data import DataLoader, Dataset
 import pandas as pd
 from tqdm import tqdm
 from configparser import ConfigParser
+#from dataset import *
 from dataset import CustomTestDataset
 from dataset import CustomDataset
+from dataset import make_json, stratified_group_k_fold
+from dataset import get_valid_transform, get_train_transform
 from trainer import ensemble_submission, train_fn #trainer
 from trainer import collate_fn
 from trainer import infer_fn
 # from dataset import stratified_group_k_fold 
 # from dataset import CustomDataset #dataset
 # from dataset import get_train_transform
-from dataset import *
 from model import * #model list file 불러오기
 
 from setting import *
@@ -40,7 +42,7 @@ if __name__ == '__main__':
 
     #=========================config====================================#
     
-    #training se
+    #training set
     start_id = configs["training"]["id"]
     fold_num = configs["training"]["fold_num"]
 
@@ -66,16 +68,29 @@ if __name__ == '__main__':
             model_name = config_id["model_name"]
             model = get_model(model_name)
             box_model_name = get_box_model(config_id["box_model_name"])
+
+    # Validation Set Path Name 설정
+    annotation_foldDir = []
+    fold_idx = 4
+    if fold_num > 1:
+        for fold_idx in range(1, fold_num+1):
+            anno_trainDir, anno_valDir = make_dir(annotation, fold_idx)
+            annotation_foldDir.append([anno_trainDir, anno_valDir])
+    elif fold_num == 1:
+        anno_trainDir, anno_valDir = make_dir(annotation, fold_idx)
+        annotation_foldDir.append([anno_trainDir, anno_valDir])
     #=========================config====================================#
 
 ## ================ train with validation set - by stratified_k_fold (hyunsoo) ===============#
     #make data frame for train set & data set
-    # df = make_dataframe(annotation)
-    # train_x = df["id"]
-    # train_y = df["class"]
-    # groups = df["file_name"]
+    df = make_dataframe(annotation)
+    train_x = df["id"]
+    train_y = df["class"]
+    groups = df["file_name"]
 
-    # for fold_ind, (dev_ind, val_ind) in enumerate(stratified_group_k_fold(train_x, train_y, groups, fold_num=5)):
+    print("-"*40 + f'make k fold stratified start' + "-"*40)
+
+    # for fold_ind, (dev_ind, val_ind) in enumerate(stratified_group_k_fold(train_x, train_y, groups, fold_num)):
         
     #     print(f'{fold_ind} fold start -')
     #     # dev_ind, val_ind는 list 형태로 들어가서 Series형식의 id, Image id를 뽑는다.
@@ -83,37 +98,33 @@ if __name__ == '__main__':
     #     dev_groups, val_groups = groups[dev_ind], groups[val_ind] # Image id index,
     #     dev_id, val_id = train_x[dev_ind], train_x[val_ind]
 
-    #     # label 비율 검사
-    #     distrs.append(get_distribution(dev_y))
-    #     index.append(f'development set - fold {fold_ind}')
-    #     distrs.append(get_distribution(val_y))
-    #     index.append(f'validation set - fold {fold_ind}')
-
-    #     # json file 생성
-    #     dev_id_json = list(set(dev_id))
-    #     val_id_json = list(set(val_id))
-    #     make_json(fold_ind, dev_id_json, val_id_json) # make json file
-
-    #     # 가정 설정문,  동일한게 image file이 있는 지 확인 True이면 그대로 진행 아니라면 Assertion Error 생성
-    #    assert len(set(dev_groups) & set(val_groups)) == 0
+    #     assert len(set(dev_groups) & set(val_groups)) == 0
     #     # dev_ind, val_ind는 list 형태로 들어가서 Series형식의 id, Image id를 뽑는다.
     #     dev_y, val_y = train_y[dev_ind], train_y[val_ind] # train index, 
     #     dev_groups, val_groups = groups[dev_ind], groups[val_ind] # Image id index,
     #     dev_id, val_id = train_x[dev_ind], train_x[val_ind]
-    
-## ================ train with validation set - by stratified_k_fold (hyunsoo) ===============#
+
+    #     # label 비율 검사
+    #     # distrs.append(get_distribution(dev_y))
+    #     # index.append(f'development set - fold {fold_ind}')
+    #     # distrs.append(get_distribution(val_y))
+    #     # index.append(f'validation set - fold {fold_ind}')
+
+    #     # json file 생성
+    #     dev_id_json = list(set(dev_id))
+    #     val_id_json = list(set(val_id))
+    #     make_json(fold_ind, dev_id_json, val_id_json, annotation_foldDir[fold_ind]) # make json file
+
+    #     # 가정 설정문,  동일한게 image file이 있는 지 확인 True이면 그대로 진행 아니라면 Assertion Error 생성
+    # print("-"*40 + f'make k fold stratified end' + "-"*40)
     
 ## ================ train with validation set - by json (hyunsoo) ===============#
 
-    annotation_foldDir = []
-    if fold_num >= 1:
-        for fold_idx in range(1, fold_num+1):
-            anno_trainDir, anno_valDir = make_dir(annotation, fold_idx)
-            annotation_foldDir.append([anno_trainDir, anno_valDir])
-
     checkpoints = []
     for fold_ind, (anno_trainDir, anno_valDir) in enumerate(annotation_foldDir):
-
+        
+        if fold_num == 1:
+            fold_ind = fold_idx
         group_name = f"{wandb_group_name}_id_{start_id}"
         experiemnt_name = f"fold_{fold_ind}_detection"
         run = wandb.init(
@@ -126,7 +137,7 @@ if __name__ == '__main__':
 
         print(f'{fold_ind} fold start -')
         train_dataset = CustomDataset(anno_trainDir, data_dir, get_train_transform()) 
-        valid_dataset = CustomDataset(anno_valDir, data_dir, get_train_transform()) 
+        valid_dataset = CustomDataset(anno_valDir, data_dir, get_valid_transform()) 
         
         # DataLoader 부분
         train_data_loader = DataLoader(
@@ -157,7 +168,7 @@ if __name__ == '__main__':
 
         # training
         model_path = train_fn(train_data_loader, valid_data_loader, model, device, fold_ind, anno_valDir, config_id, configs)
-        checkpoints.append(model_path)
+        checkpoints.append([fold_ind, model_path])
         run.finish()
         
         # train_end
@@ -179,15 +190,14 @@ if __name__ == '__main__':
     print(device)
 
     submission_files=[]
-    for indx, check_point in enumerate(checkpoints):
-        submission_dir = infer_fn(indx+1, model, start_id, test_data_loader, check_point, annotation_test, config_id["score_threshold"], device, configs)
+    for check_point in checkpoints:
+        submission_dir = infer_fn(check_point[0], model, start_id, test_data_loader, check_point[1], annotation_test, config_id["score_threshold"], device, configs)
         submission_files.append(submission_dir)
 
     submission_df = [pd.read_csv(file) for file in submission_files]
 
-    # ensemble_test
-    ensemble_submission(submission_df, annotation_test, start_id, configs)
+    # ensemble_test / submission 파일들이 2개 이상 있어야한다.
+    if len(submission_df) > 1:
+        ensemble_submission(submission_df, annotation_test, start_id, configs)
 
     print("-" * 40 + "test - end" + "-" * 40)
-
-## ================ train with validation set - by json (hyunsoo) ===============#

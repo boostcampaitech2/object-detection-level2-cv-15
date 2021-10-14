@@ -11,11 +11,88 @@ import albumentations as A
 from albumentations.pytorch import ToTensorV2
 
 import torch
+import json
 from torch.utils.data import DataLoader, Dataset
 from collections import Counter, defaultdict
 
 # faster rcnn model이 포함된 library
 import torchvision
+
+def make_json(fold_ind, dev_id_json, val_id_json, annotation_foldDir):
+    
+    train_path = "/opt/ml/detection/dataset/train.json"
+    #train_file_name = f"../../dataset/fold{fold_ind}_train.json"
+    train_file_name = annotation_foldDir[0]
+    #valid_file_name = f"../../dataset/fold{fold_ind}_valid.json"
+    valid_file_name = annotation_foldDir[1]
+    
+    # print(fold_ind)
+    # print(dev_id_json[0])
+    # print(val_id_json[0])
+    with open(train_path, 'r') as f:
+        json_datas = json.load(f) # python dict 처럼 접근하게끔 변환
+    	#dict_keys(['info', 'licenses', 'images', 'categories', 'annotations'])
+    # category = {}
+    # file_info = {}
+
+    info = json_datas["info"]
+    licenses = json_datas["licenses"]
+    categories = json_datas["licenses"]
+
+    images_train = []
+    images_valid = []
+
+    annotations_train = []
+    annotations_valid = []
+
+    for item in json_datas["images"]:
+        if item["id"] in dev_id_json:
+            images_train.append(item)
+        elif item["id"] in val_id_json:
+            images_valid.append(item)
+        else:
+            print("no id in images")
+
+
+    for item in json_datas["annotations"]:
+        if item["image_id"] in dev_id_json:
+            annotations_train.append(item)
+        elif item["image_id"] in val_id_json:
+            annotations_valid.append(item)
+        else:
+            print("no id in annotations")
+
+    make_json_train = defaultdict(list)
+    make_json_valid = defaultdict(list)
+    make_json_train = {"info":info, "licenses" : licenses, "images": images_train, "categories":categories, "annotations":annotations_train}
+    make_json_valid = {"info":info, "licenses" : licenses, "images": images_valid, "categories":categories, "annotations":annotations_valid}
+
+    # 개수 파악
+    if len(json_datas["images"]) != len(make_json_train["images"]) + len(make_json_valid["images"]):
+        print("images length, diff")
+
+    if len(json_datas["annotations"]) != len(make_json_train["annotations"]) + len(make_json_valid["annotations"]):
+        print("annotations length, diff")
+
+    # # 이름 중복 파악 - > 모든 성분 파악
+    # for item in make_json_train["images"] (dict):
+    #     if item["file_name"] in make_json_valid["images"]:
+    #         print("same file name exist")
+    
+    # for item in make_json_train["annotations"]:
+    #     if item["file_name"] in make_json_valid["annotations"]:
+    #         print("same file name exist")
+
+    # assert len(set(make_json_train["annotations"]) & set(make_json_valid["annotations"])) == 0
+
+    # print(make_json)
+    
+    with open(train_file_name, 'w') as output:
+        json.dump(make_json_train, output, indent=2)
+
+    with open(valid_file_name, 'w') as output:
+        json.dump(make_json_valid, output, indent=2)
+    # train, valid 개수랑 겹치는 부분
 
 # hyuns 10/11
 def stratified_group_k_fold(X, y, groups, k, seed = None):
@@ -95,6 +172,7 @@ def get_train_transform():
 
 def get_valid_transform():
     return A.Compose([
+        A.Resize(1024, 1024),
         ToTensorV2(p=1.0)
     ], bbox_params={'format': 'pascal_voc', 'label_fields': ['labels']})
 

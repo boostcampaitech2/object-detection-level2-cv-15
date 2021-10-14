@@ -90,7 +90,7 @@ def train_fn(train_data_loader, valid_data_loader, model, device, fold_ind, anno
     start_id = config_id["id"]
     score_threshold = config_id["score_threshold"]
     save_model_path = configs["path"]["save_model_path"]
-    #early_stop = config["early_stop"]
+    early_stop = config_id["early_stop"]
     early_stopping_count = 0
     best_mAP = 0
     best_loss = 1000
@@ -139,14 +139,15 @@ def train_fn(train_data_loader, valid_data_loader, model, device, fold_ind, anno
             torch.save(model.state_dict(), save_path)
             best_model = model
             best_mAP = val_mAP
+            wandb.log({"best_mAP" : best_mAP})
             print("-"*10, f"Best mAP {best_mAP}!!", "-"*10)
             print("-"*10, "Saved!!", "-"*10)
         else:
             early_stopping_count += 1
 
-        # if early_stopping_count == early_stop:
-        #     print("-"*10, "Early Stop!!!!", "-"*10)
-        #     break
+        if early_stopping_count == early_stop:
+            print("-"*10, "Early Stop!!!!", "-"*10)
+            break
 
     return save_path
 
@@ -186,7 +187,7 @@ def infer_fn(indx, model, start_id, test_data_loader, check_point, annotation_te
     submission = pd.DataFrame()
     submission['PredictionString'] = prediction_strings
     submission['image_id'] = file_names
-    submission_path = save_submission_path + f'id_{start_id}_submission_fold_{indx}_test_testset.csv'
+    submission_path = save_submission_path + f'fold{indx}_submission_{start_id}.csv'
     submission.to_csv(submission_path, index=None)
     print(submission.head())
 
