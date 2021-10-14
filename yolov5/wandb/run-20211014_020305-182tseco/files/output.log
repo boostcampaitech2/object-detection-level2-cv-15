@@ -1,0 +1,162 @@
+Overriding model.yaml nc=80 with nc=10
+                 from  n    params  module                                  arguments
+  0                -1  1      3520  models.common.Conv                      [3, 32, 6, 2, 2]
+  1                -1  1     18560  models.common.Conv                      [32, 64, 3, 2]
+  2                -1  1     18816  models.common.C3                        [64, 64, 1]
+  3                -1  1     73984  models.common.Conv                      [64, 128, 3, 2]
+  4                -1  2    115712  models.common.C3                        [128, 128, 2]
+  5                -1  1    295424  models.common.Conv                      [128, 256, 3, 2]
+  6                -1  3    625152  models.common.C3                        [256, 256, 3]
+  7                -1  1   1180672  models.common.Conv                      [256, 512, 3, 2]
+  8                -1  1   1182720  models.common.C3                        [512, 512, 1]
+  9                -1  1    656896  models.common.SPPF                      [512, 512, 5]
+ 10                -1  1    131584  models.common.Conv                      [512, 256, 1, 1]
+ 11                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 12           [-1, 6]  1         0  models.common.Concat                    [1]
+ 13                -1  1    361984  models.common.C3                        [512, 256, 1, False]
+ 14                -1  1     33024  models.common.Conv                      [256, 128, 1, 1]
+ 15                -1  1         0  torch.nn.modules.upsampling.Upsample    [None, 2, 'nearest']
+ 16           [-1, 4]  1         0  models.common.Concat                    [1]
+ 17                -1  1     90880  models.common.C3                        [256, 128, 1, False]
+ 18                -1  1    147712  models.common.Conv                      [128, 128, 3, 2]
+ 19          [-1, 14]  1         0  models.common.Concat                    [1]
+ 20                -1  1    296448  models.common.C3                        [256, 256, 1, False]
+ 21                -1  1    590336  models.common.Conv                      [256, 256, 3, 2]
+ 22          [-1, 10]  1         0  models.common.Concat                    [1]
+ 23                -1  1   1182720  models.common.C3                        [512, 512, 1, False]
+ 24      [17, 20, 23]  1     40455  models.yolo.Detect                      [10, [[10, 13, 16, 30, 33, 23], [30, 61, 62, 45, 59, 119], [116, 90, 156, 198, 373, 326]], [128, 256, 512]]
+Model Summary: 270 layers, 7046599 parameters, 7046599 gradients, 15.9 GFLOPs
+Transferred 343/349 items from yolov5s.pt
+Scaled weight_decay = 0.000375
+[34m[1moptimizer:[39m[22m SGD with parameter groups 57 weight, 60 weight (no decay), 60 bias
+[34m[1mtrain: [39m[22mScanning '/opt/ml/detection/yolov5/dataset/labels/train' images and labels...3902 found, 0 missing, 0 empty, 1 corrupted: 100%|███████████████████████████████████████████| 3902/3902 [00:00<00:00, 8136.82it/s]
+[34m[1mtrain: [39m[22mWARNING: Ignoring corrupted image and/or label /opt/ml/detection/yolov5/dataset/images/train/4041.jpg: duplicate labels
+Plotting labels...
+[34m[1mtrain: [39m[22mNew cache created: /opt/ml/detection/yolov5/dataset/labels/train.cache
+[34m[1mval: [39m[22mScanning '/opt/ml/detection/yolov5/dataset/labels/val' images and labels...981 found, 0 missing, 0 empty, 0 corrupted: 100%|██████████████████████████████████████████████████| 981/981 [00:00<00:00, 4556.38it/s]
+[34m[1mval: [39m[22mNew cache created: /opt/ml/detection/yolov5/dataset/labels/val.cache
+[34m[1mautoanchor: [39m[22mAnalyzing anchors... anchors/target = 3.73, Best Possible Recall (BPR) = 0.9982
+Image sizes 1024 train, 1024 val
+Using 4 dataloader workers
+Logging results to [1mgarbage_ObjectDetection/yolov5x6_225
+Starting training for 2 epochs...
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       0/1     24.9G    0.0863   0.06578   0.06157       122      1024: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 82/82 [01:30<00:00,  1.11s/it]
+
+
+
+
+
+
+
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:27<00:00,  2.50s/it]
+                 all        981       4632     0.0454      0.228     0.0472     0.0188
+     Epoch   gpu_mem       box       obj       cls    labels  img_size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+       1/1       30G   0.06112   0.05755   0.05302        86      1024: 100%|██████████████████████████████████████████████████████████████████████████████████████████████████████████| 82/82 [01:27<00:00,  1.06s/it]
+
+
+
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:  82%|██████████████████████████████████████████████████████████████████████████▍                | 9/11 [00:20<00:02,  1.17s/it]
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:21<00:00,  1.96s/it]
+2 epochs completed in 0.064 hours.
+Validating garbage_ObjectDetection/yolov5x6_225/weights/best.pt...
+Fusing layers...
+Model Summary: 213 layers, 7037095 parameters, 0 gradients, 15.9 GFLOPs
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95:   0%|                                                                                                   | 0/11 [00:00<?, ?it/s]
+Optimizer stripped from garbage_ObjectDetection/yolov5x6_225/weights/last.pt, 14.8MB
+
+
+
+
+
+
+               Class     Images     Labels          P          R     mAP@.5 mAP@.5:.95: 100%|██████████████████████████████████████████████████████████████████████████████████████████| 11/11 [00:25<00:00,  2.36s/it]
+                 all        981       4632     0.0588      0.291     0.0751     0.0378
+       General trash        981        793     0.0565      0.396     0.0587     0.0295
+               Paper        981       1271     0.0659      0.671      0.168     0.0602
+          Paper pack        981        180     0.0691      0.178      0.041     0.0238
+               Metal        981        187     0.0575      0.171     0.0299     0.0174
+               Glass        981        197     0.0723      0.102     0.0385     0.0206
+             Plastic        981        589     0.0694      0.411     0.0592     0.0264
+           Styrofoam        981        253     0.0532       0.17     0.0251     0.0137
+         Plastic bag        981       1036      0.102      0.703      0.285      0.162
+             Battery        981         32          0          0     0.0151    0.00515
+            Clothing        981         94     0.0415      0.106     0.0301     0.0195
