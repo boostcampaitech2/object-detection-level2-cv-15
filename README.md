@@ -157,29 +157,33 @@
 
 ### Install
 
-- Initial setting
-  ```sh
-  conda install pytorch==1.7.1 torchvision==0.8.2 torchaudio==0.7.2   cudatoolkit=11.0 -c pytorch
-  pip install -r requirements.txt
-  cd mmdetection
-  pip install openmim
-  mim install mmdet
-  cd ..
-  python -m pip install -e detectron2
-  ```
+1. faster_rcnn
+    ```sh
+    $ cd faster_rcnn/baseline
+    $ pip install -r requirements.txt
+    $ python main.py
 
-- MMDetection
+    [Parameter setting : config.json, main.py (config)]
+    ```
+2. MMDetection
+    ```sh
+    $ cd mmdetection
+    $ conda install pytorch=1.7.1 cudatoolkit=11.0 torchvision -c pytorch
+    $ pip install openmim
+    $ mim install mmdet
+    ```
 
-  [MMDetection README.md](https://github.com/boostcampaitech2/object-detection-level2-cv-15/mmdetection/README.md)
+3. Detectron2
+    ```sh
+    $ cd mmdetection
+    $ python -m pip install -e detectron2
+    ```
 
-  ```sh
-  $ cd mmdetection
-  $ pip install -r requirements.txt  # or "python setup.py develop"
-  ```
-
-- detectron2
-
-  [detectron2 README.md](https://github.com/boostcampaitech2/object-detection-level2-cv-15/detectron2/README.md)
+4. yolov5
+    ```sh
+    $ cd yolov5
+    $ pip install -r requirements.txt
+    ```
 
 ### Getting_Started
 1. faster_rcnn
@@ -192,13 +196,19 @@
 2. MMDetection
     ```sh
     $ cd mmdetection
-    $ 
+    $
     ```
 
 3. Detectron2
     ```sh
-    $ cd mmdetection
+    $ cd detectron2
     $ 
+    ```
+
+4. YOLOv5
+    ```sh
+    $ cd yolov5
+    $ python train.py —cfg cfg/file/locate —data data/folder/locate —epochs 500 —batch_size 32
     ```
 
 ## Result
