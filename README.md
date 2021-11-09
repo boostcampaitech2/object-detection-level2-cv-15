@@ -25,133 +25,32 @@
 
 ```sh
 |-- convert2Yolo
-|   |-- Format.py
-|   |-- README.md
-|   |-- classname.txt
-|   |-- example
-|   |-- example.py
-|   |-- images
-|   |-- label_visualization.py
-|   |-- manifest.txt
-|   |-- msgLogInfo.py
-|   `-- requirements.txt
 |-- datasets
 |   |-- Untitled.ipynb
 |   |-- detection_info.csv
 |   |-- test.json
 |   `-- train.json
 |-- detectron2
-|   |-- GETTING_STARTED.md
-|   |-- INSTALL.md
-|   |-- LICENSE
 |   |-- MODEL_ZOO.md
 |   |-- README.md
-|   |-- build
 |   |-- configs
 |   |-- datasets
-|   |-- demo
 |   |-- detectron2
-|   |-- detectron2.egg-info
-|   |-- dev
-|   |-- docker
-|   |-- docs
-|   |-- faster_rcnn_inference.ipynb
-|   |-- faster_rcnn_train.ipynb
-|   |-- for_camper.md
-|   |-- output
-|   |-- output_eval
-|   |-- projects
-|   |-- setup.cfg
-|   |-- setup.py
-|   |-- tests
 |   `-- tools
 |-- faster_rcnn
-|   |-- EDA.ipynb
-|   |-- base_code_2_ipynb
-|   |-- base_code_ipynb
-|   |-- baseline
-|   |-- baseline_test
-|   |-- detection_info.csv
-|   |-- ensemble.ipynb
-|   |-- pseudo_label.ipynb
-|   `-- torchvision_inference
+|   `-- baseline
 |-- mmdetection
-|   |-- LICENSE
-|   |-- MANIFEST.in
 |   |-- README.md
 |   |-- README_zh-CN.md
-|   |-- Stratified k-Fold.ipynb
-|   |-- WBF.ipynb
-|   |-- [Basic] metric_skeleton.ipynb
-|   |-- cocoapi
 |   |-- configs
-|   |-- demo
-|   |-- detection_info.csv
-|   |-- docker
-|   |-- docs
-|   |-- docs_zh-CN
-|   |-- faster_rcnn_inference-Copy1.ipynb
-|   |-- faster_rcnn_inference.ipynb
-|   |-- faster_rcnn_train-Copy.ipynb
-|   |-- faster_rcnn_train.ipynb
-|   |-- for_camper.md
-|   |-- md_inference.py
-|   |-- mmdet
-|   |-- mmdet.egg-info
-|   |-- model-index.yml
-|   |-- myshell.sh
-|   |-- pytest.ini
-|   |-- requirements
-|   |-- requirements.txt
-|   |-- resources
-|   |-- setup.cfg
-|   |-- setup.py
-|   |-- test_1.csv
-|   |-- test_2.csv
-|   |-- test_3.csv
-|   |-- test_4.csv
-|   |-- test_5.csv
-|   |-- tests
-|   |-- tools
-|   |-- train_1.csv
-|   |-- train_2.csv
-|   |-- train_3.csv
-|   |-- train_4.csv
-|   |-- train_5.csv
-|   |-- wandb
-|   `-- work_dirs
+|   `-- tools
 |-- others
-|   |-- Draw_BB.ipynb
-|   |-- EDA.ipynb
-|   |-- [Basic] FPN_skeleton.ipynb
-|   |-- [Basic] FPN_skeleton_answer.ipynb
-|   |-- [Basic] metric_skeleton-Copy1.ipynb
-|   |-- [Basic] metric_skeleton.ipynb
-|   |-- [Basic] metric_skeleton_answer.ipynb
-|   |-- [Challenge] metric_skeleton.ipynb
-|   |-- [Challenge] metric_skeleton_answer.ipynb
-|   |-- [answer] ensemble.ipynb
-|   `-- inference_to_submit-Modify.ipynb
 |-- requirements.txt
 `-- yolov5
-    |-- CONTRIBUTING.md
-    |-- LICENSE
-    |-- README.md
     |-- data
-    |-- detect.py
-    |-- export.py
-    |-- garbage_ObjectDetection
-    |-- hubconf.py
-    |-- inference_to_submit.ipynb
-    |-- models
     |-- requirements.txt
-    |-- runs
     |-- train.py
-    |-- tutorial-Copy1.ipynb
-    |-- tutorial.ipynb
-    |-- utils
-    |-- val.py
-    `-- wandb
+    `-- val.py
 ```
 
 
@@ -179,7 +78,7 @@
     $ python -m pip install -e detectron2
     ```
 
-4. yolov5
+4. YOLOv5
     ```sh
     $ cd yolov5
     $ pip install -r requirements.txt
@@ -196,13 +95,15 @@
 2. MMDetection
     ```sh
     $ cd mmdetection
-    $
-    ```
+    $ python ./tools/train.py [Config File]
+    [ex) python ./tools/train.py ./configs/1.MyConfig/sm_config.py]
 
+    ```
 3. Detectron2
     ```sh
     $ cd detectron2
-    $ 
+    $ python tools/train_net.py --config-file [Config File]
+    [ex) python tools/train_net.py --config-file ../configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml]
     ```
 
 4. YOLOv5
@@ -213,7 +114,7 @@
 
 ## Result
 
-<img src="https://github.com/boostcampaitech2/object-detection-level2-cv-15/results/img1.png" width="600px" height="400px"></img><br/>
+<img src="https://github.com/boostcampaitech2/object-detection-level2-cv-15/blob/master/results/img1.png" width="800px" height="400px"></img><br/>
 
 ## Reference
 
