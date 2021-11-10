@@ -2,13 +2,15 @@
 
 ## Table of Contents
 
-- [Background](#background)
-- [Usage](#usage)
-  - [Structure](#structure)
-  - [Install](#install)
-  - [Getting_Started](#getting_started)
-- [Result](#result)
-- [Reference](#reference)
+- [Object Detection](#object-detection)
+  - [Table of Contents](#table-of-contents)
+  - [Background](#background)
+  - [Usage](#usage)
+    - [Structure](#structure)
+    - [Install](#install)
+    - [Getting_Started](#getting_started)
+  - [Result](#result)
+  - [Reference](#reference)
 
 ## Background
 
@@ -16,7 +18,7 @@
 
 분리수거는 이러한 환경 부담을 줄일 수 있는 방법 중 하나입니다. 잘 분리배출 된 쓰레기는 자원으로서 가치를 인정받아 재활용되지만, 잘못 분리배출 되면 그대로 폐기물로 분류되어 매립 또는 소각되기 때문입니다.
 
-따라서 우리는 사진에서 쓰레기를 Segmentation하는 모델을 만들어 이러한 문제점을 해결해보고자 합니다. 문제 해결을 위한 데이터셋으로는 배경, 일반 쓰레기, 플라스틱, 종이, 유리 등 11 종류의 쓰레기가 찍힌 사진 데이터셋이 제공됩니다.
+따라서 우리는 사진에서 쓰레기를 Detection 하는 모델을 만들어 이러한 문제점을 해결해보고자 합니다. 문제 해결을 위한 데이터셋으로는 일반 쓰레기, 플라스틱, 종이, 유리 등 10 종류의 쓰레기가 찍힌 사진 데이터셋이 제공됩니다.
 
 여러분에 의해 만들어진 우수한 성능의 모델은 쓰레기장에 설치되어 정확한 분리수거를 돕거나, 어린아이들의 분리수거 교육 등에 사용될 수 있을 것입니다. 부디 지구를 위기로부터 구해주세요! 🌎
 
@@ -26,22 +28,17 @@
 ```sh
 |-- convert2Yolo
 |-- datasets
-|   |-- Untitled.ipynb
 |   |-- detection_info.csv
 |   |-- test.json
 |   `-- train.json
 |-- detectron2
-|   |-- MODEL_ZOO.md
-|   |-- README.md
 |   |-- configs
 |   |-- datasets
 |   |-- detectron2
 |   `-- tools
-|-- faster_rcnn
+|-- torchvision
 |   `-- baseline
 |-- mmdetection
-|   |-- README.md
-|   |-- README_zh-CN.md
 |   |-- configs
 |   `-- tools
 |-- others
@@ -56,14 +53,12 @@
 
 ### Install
 
-1. faster_rcnn
+1. torchvision
     ```sh
-    $ cd faster_rcnn/baseline
+    $ cd torchvision/baseline
     $ pip install -r requirements.txt
-    $ python main.py
-
-    [Parameter setting : config.json, main.py (config)]
     ```
+
 2. MMDetection
     ```sh
     $ cd mmdetection
@@ -85,31 +80,36 @@
     ```
 
 ### Getting_Started
-1. faster_rcnn
+1. torchvision
     ```sh
-    $ cd faster_rcnn/baseline
+    $ cd torchvision/baseline
     $ python main.py
 
     [Parameter setting : config.json, main.py (config)]
     ```
+    
 2. MMDetection
     ```sh
     $ cd mmdetection
     $ python ./tools/train.py [Config File]
-    [ex) python ./tools/train.py ./configs/1.MyConfig/sm_config.py]
 
+    [ex) python ./tools/train.py ./configs/1.MyConfig/sm_config.py]
     ```
+
 3. Detectron2
     ```sh
     $ cd detectron2
     $ python tools/train_net.py --config-file [Config File]
+
     [ex) python tools/train_net.py --config-file ../configs/COCO-Detection/faster_rcnn_R_101_FPN_3x.yaml]
     ```
 
 4. YOLOv5
     ```sh
     $ cd yolov5
-    $ python train.py —cfg cfg/file/locate —data data/folder/locate —epochs 500 —batch_size 32
+    $ python train.py [Config File]
+
+    [ex) python train.py —cfg cfg/file/locate —data data/folder/locate —epochs 500 —batch_size 32]
     ```
 
 ## Result
