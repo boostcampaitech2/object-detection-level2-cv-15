@@ -69,7 +69,7 @@
 
 3. Detectron2
     ```sh
-    $ cd mmdetection
+    $ cd detectron2
     $ python -m pip install -e detectron2
     ```
 
